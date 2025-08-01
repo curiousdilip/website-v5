@@ -1,0 +1,130 @@
+import { motion } from "framer-motion";
+
+
+export default function Footer() {
+  // Define variants inline
+  const footerVariants = {
+    initial: { opacity: 0, y: 50 },
+    animate: {
+      opacity: 1,
+      y: 0,
+      transition: { staggerChildren: 0.2, delayChildren: 0.1 },
+    },
+    exit: { opacity: 0, y: 50, transition: { duration: 0.3 } },
+  };
+
+  const footerItemVariants = {
+    initial: { opacity: 0, y: 20 },
+    animate: { opacity: 1, y: 0 },
+  };
+
+  return (
+    <>
+      {/* <hr /> */}
+      <motion.footer
+        variants={footerVariants}
+        initial="initial"
+        animate="animate"
+        exit="exit"
+      >
+        <div className="container">
+          <div className="upper-footer">
+            <motion.div className="description" variants={footerItemVariants}>
+              <h3>Dilip.</h3>
+              <p>Delivers responsive web solutions and maintaining high client satisfaction</p>
+              <motion.div className="socials" variants={footerItemVariants}>
+                <motion.ul>
+                  {[
+                    {
+                      href: "https://github.com/curiousdilip",
+                      label: "github",
+                      icon: "bi bi-github",
+                    },
+                    {
+                      href: "https://www.linkedin.com/in/curiousdilip/",
+                      label: "linkedin",
+                      icon: "bi bi-linkedin",
+                    },
+                    {
+                      href: "https://x.com/curiousdilip/",
+                      label: "twitter",
+                      icon: "bi bi-twitter-x",
+                    },
+                    {
+                      href: "mailto:curiousdilip@gmail.com",
+                      label: "mail me",
+                      icon: "bi bi-envelope",
+                    },
+                  ].map((item) => (
+                    <motion.li key={item.href} variants={footerItemVariants}>
+                      <a href={item.href} target="_blank" rel="noopener noreferrer" aria-label={item.label}>
+                        <i className={item.icon}></i>
+                      </a>
+                    </motion.li>
+                  ))}
+                </motion.ul>
+              </motion.div>
+            </motion.div>
+
+            <div className="links">
+              {[
+                {
+                  title: "Site Link",
+                  links: [
+                    { text: "Projects", href: "/work" },
+                    { text: "About", href: "/about" },
+                    { text: "contact", href: "/contact" },
+                  ],
+                },
+                {
+                  title: "This Site",
+                  links: [
+                    {
+                      text: "Source Code",
+                      href: "https://github.com/curiousdilip/website-final",
+                      external: true,
+                    },
+                    { text: "Sitemap", href: "/sitemap.xml" },
+                  ],
+                },
+                {
+                  title: "Elsewhere",
+                  links: [
+                    {
+                      text: "Frontend Mentor",
+                      href: "https://www.frontendmentor.io/profile/curiousdilip",
+                      external: true,
+                    },
+                    {
+                      text: "Codepen",
+                      href: "https://codepen.io/curiousdilip",
+                      external: true,
+                    },
+                  ],
+                },
+              ].map((col) => (
+                <motion.div className="link" key={col.title} variants={footerItemVariants}>
+                  <h4>{col.title}</h4>
+                  <ul>
+                    {col.links.map((lnk) => (
+                      <li key={lnk.href}>
+                        <a href={lnk.href} target={lnk.external ? "_blank" : undefined} rel={lnk.external ? "noopener noreferrer" : undefined}>
+                          {lnk.text}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+
+          <motion.div className="copyright" variants={footerItemVariants}>
+            <p>&copy; {new Date().getFullYear()} Dilip Kumar. All rights reserved. </p>
+            <p>Last updated by Dilip on July 31, 2025 at 11:27 AM UTC +5:30</p>
+          </motion.div>
+        </div>
+      </motion.footer>
+    </>
+  );
+}

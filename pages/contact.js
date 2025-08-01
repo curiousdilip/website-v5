@@ -1,0 +1,137 @@
+import Head from 'next/head';
+import { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
+import ContactForm from '../components/ContactForm';
+
+export default function Contact() {
+  const [city, setCity] = useState('');
+  const [country, setCountry] = useState('');
+  const [temp, setTemp] = useState('');
+  const [weather, setWeather] = useState('');
+  const [formattedDateTime, setFormattedDateTime] = useState('');
+
+  const capitalizeWords = (str) =>
+    str
+      .split(' ')
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(' ');
+
+  const getData = async () => {
+    try {
+      const response = await fetch(
+        'https://api.openweathermap.org/data/2.5/weather?q=Dwarka,Delhi&units=metric&appid=dfc884ab11e96f832d54aa9a6136c037'
+      );
+      if (!response.ok) throw new Error('Failed to fetch weather data');
+      const data = await response.json();
+
+      setCity(data.name);
+      setCountry(data.sys.country);
+      setWeather(data.weather[0].description);
+      setTemp(Math.round(data.main.temp));
+
+      const now = new Date();
+      const utcTime = now.getTime() + now.getTimezoneOffset() * 60000;
+      const localTime = new Date(utcTime + data.timezone * 1000);
+
+      const options = {
+        day: '2-digit',
+        month: '2-digit',
+        year: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+        hour12: false,
+      };
+      const dateFormatter = new Intl.DateTimeFormat('de-DE', options);
+      const parts = dateFormatter.formatToParts(localTime);
+
+      let formattedDate = '';
+      let formattedTime = '';
+      for (const part of parts) {
+        if (['day', 'month', 'year'].includes(part.type)) {
+          formattedDate += part.value;
+          if (part.type === 'day' || part.type === 'month') formattedDate += '.';
+        } else if (part.type === 'hour' || part.type === 'minute') {
+          if (formattedTime !== '') formattedTime += ':';
+          formattedTime += part.value;
+        }
+      }
+
+      setFormattedDateTime(`${formattedDate} - ${formattedTime}`);
+    } catch (err) {
+      console.error(err);
+    }
+  };
+
+  useEffect(() => {
+    getData();
+  }, []);
+
+  return (
+    <>
+      <Head>
+        <title>Contact | Dilip Kumar Maurya</title>
+        <meta
+          name="description"
+          content="Whether you are interested in hiring me, to work on a project together or to discuss any other proposal, feel free to contact me anytime."
+        />
+      </Head>
+      <div data-scroll-section>
+        <div className="container container__padding-block">
+          <div className="contact">
+            <motion.header
+              className="contact__header"
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 1, ease: 'anticipate' }}
+            >
+              <h1 className="contact__header-heading">Get in Touch
+
+</h1>
+              <p className="contact__header-text">Reach out for collaborations, questions, or just to say hi. I’m always open to connect!</p>
+            </motion.header>
+            <div className="contact__content">
+              <ContactForm />
+              <motion.div
+                className="contact__content-info"
+                initial={{ opacity: 0, scale: 0.5 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 1, ease: 'anticipate' }}
+              >
+                <div className="contact__content-info__data">
+                  <h3 className="body-s">Location</h3>
+                  <div>
+                    <p>
+                      {city}, {country}
+                    </p>
+                    <p>{formattedDateTime}</p>
+                    <p>
+                      {temp}°C - {capitalizeWords(weather)}
+                    </p>
+                  </div>
+                </div>
+
+                <div className="contact__content-info__data">
+                  <h3 className="body-s">Get in Touch</h3>
+                  <div>
+                    <a href="https://www.linkedin.com/in/curiousdilip/" target="_blank" rel="noopener noreferrer">
+                      LinkedIn
+                    </a>{' '}
+                    <a href="https://www.x.com/curiousdilip/" target="_blank" rel="noopener noreferrer">
+                      Twitter
+                    </a>{' '}
+                    <a href="https://github.com/curiousdilip" target="_blank" rel="noopener noreferrer">
+                      GitHub
+                    </a>
+                     <a href="https://codepen.io/curiousdilip" target="_blank" rel="noopener noreferrer">
+                      Codepen
+                    </a>
+                  </div>
+                </div>
+              </motion.div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
