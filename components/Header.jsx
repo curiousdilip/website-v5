@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import iconMenu from '../public/assets/icons/icon-menu.svg';
 import iconClose from '../public/assets/icons/icon-close.svg';
+import Image from 'next/image';
 
 export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -43,7 +44,11 @@ export default function Header() {
           aria-expanded={isNavOpen}
           onClick={toggleNav}
         >
-          <img src={navIcon.src} alt="Menu toggle open" />
+         
+
+          <Image 
+          src={navIcon.src} alt="Menu toggle open"
+          width={32} height={32} />
         </button>
 
         <ul className="nav__list" id="primary-nav" aria-expanded={isNavOpen}>
@@ -99,6 +104,7 @@ export default function Header() {
             className="nav__availability-status--message"
             id="availability-status-message"
             aria-expanded={isStatusOpen}
+            
           >
             <p className="nav__availability-status__title">
               Project Availability Status
