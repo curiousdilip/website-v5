@@ -9,7 +9,6 @@ This is a personal portfolio web application built with **Next.js** and **React*
 - [Demo](#demo)
 - [Features](#features)
 - [Tech Stack](#tech-stack)
-- [Project Structure](#project-structure)
 - [Getting Started](#getting-started)
 - [Available Scripts](#available-scripts)
 - [Deployment](#deployment)
@@ -19,7 +18,7 @@ This is a personal portfolio web application built with **Next.js** and **React*
 
 ## Demo
 
-[(Live Link)](https://dilipmaurya.in/)
+[(www.dilipmaurya.in/)](https://www.dilipmaurya.in/)
 
 ---
 
@@ -43,38 +42,8 @@ This is a personal portfolio web application built with **Next.js** and **React*
 - [Framer Motion](https://www.framer.com/motion/)
 - [Locomotive Scroll](https://locomotivemtl.github.io/locomotive-scroll/)
 - [Cosmic JS](https://www.cosmicjs.com/) (Headless CMS for project data)
-- CSS Variables and Media Queries for styling
-- Google Fonts (Montserrat)
-
----
-
-## Project Structure
-
-your-nextjs-portfolio/
-├── components/
-│ ├── Card.jsx
-│ ├── ContactForm.jsx
-│ ├── Header.jsx
-│ ├── OtherProject.jsx
-│ ├── ScrollToTop.jsx
-├── pages/
-│ ├── _app.js # Main layout and scroll provider
-│ ├── _document.js # Custom document for Google Fonts
-│ ├── 404.js # Custom 404 error page
-│ ├── about.js # About page
-│ ├── contact.js # Contact page
-│ ├── index.js # Home page
-│ └── work/
-│ ├── index.js # Projects list page
-│ └── [slug].js # Individual project dynamic page
-├── public/
-│ └── assets/ # Static images and icons
-├── styles/
-│ └── globals.css # Global CSS styles
-├── package.json
-└── next.config.js (optional)
-
-text
+- CSS and Media Queries for styling
+- Google Fonts (Quicksand)
 
 ---
 
@@ -89,8 +58,8 @@ text
 
 1. Clone the repository:
 
-git clone https://github.com/your-username/your-nextjs-portfolio.git
-cd your-nextjs-portfolio
+git clone https://github.com/curiousdilip/website-v5.git
+cd website-v5
 
 text
 
@@ -121,7 +90,6 @@ Open [http://localhost:3000](http://localhost:3000) to view your portfolio in yo
 - `npm run dev` - Start the development server.
 - `npm run build` - Build the app for production.
 - `npm start` - Start the production server after building.
-- `npm run lint` - Run ESLint to check code quality.
 
 ---
 
@@ -135,25 +103,6 @@ You can deploy this Next.js app using platforms like:
 - Custom Node.js hosting
 
 Make sure to set up any environment variables (e.g., API keys) in your deployment environment.
-
----
-
-## Environment Variables
-
-If you extend the app to use private API keys (e.g., for Cosmic JS or OpenWeatherMap), add a `.env.local` file in the root and use Next.js environment variables 🔐.
-
-Example `.env.local`:
-
-NEXT_PUBLIC_COSMIC_READ_KEY=your_read_key_here
-NEXT_PUBLIC_WEATHER_API_KEY=your_openweathermap_key_here
-
-text
-
-Access them in your code as:
-
-process.env.NEXT_PUBLIC_COSMIC_READ_KEY
-
-text
 
 ---
 
@@ -174,8 +123,8 @@ This project is licensed under the MIT License.
 
 ## Author
 
-Dimitar Kalapocev  
-[LinkedIn](https://www.linkedin.com/in/dimitar-kalapocev/) | [GitHub](https://github.com/DimitarK13) | [Instagram](https://www.instagram.com/dimitar_kalapocev/)
+Dilip Kumar Maurya 
+[LinkedIn](https://www.linkedin.com/in/curiousdilip/) | [GitHub](https://github.com/curiousdilip) | [Twitter X](https://x.com/curiousdilip/)
 
 ---
 

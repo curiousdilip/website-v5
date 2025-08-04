@@ -117,7 +117,7 @@ export default function Work() {
                   style={{
                     display: 'flex',
                     flexDirection: 'column',
-                    borderRadius: '18px',
+                    borderRadius: '12px',
                     background: '#131313',
                     boxShadow: '0 4px 32px 0 rgb(0 0 0 / 6%)',
                     overflow: 'hidden',
@@ -127,23 +127,17 @@ export default function Work() {
                 >
                   {project.metadata?.gallery?.[0]?.image?.url && (
                     <div style={{ width: "100%", height: "180px", overflow: "hidden" }}>
-                      {/* <img
-                        src={project.metadata.gallery[0].image.url}
-                        alt={project.title}
-                        style={{
-                          width: '100%',
-                          height: '100%',
-                          objectFit: 'cover',
-                          display: 'block',
-                        }}
-                      /> */}
+
 
                       <Image
-  src={project.metadata.gallery[0].image.url}
-  alt={project.title}
-  width={387}
-  height={180}
-/>
+                        src={project.metadata.gallery[0].image.url}
+                        alt={project.title}
+                        width="0"
+                        height={180}
+                        sizes="100vw"
+                        style={{ width: '100%', height: 'auto' }}
+                        priority
+                      />
 
                     </div>
                   )}
@@ -166,10 +160,7 @@ export default function Work() {
                       className="btn btn--secondary"
                       style={{
                         alignSelf: 'flex-start',
-                        fontWeight: 500,
-                        fontSize: '1.1rem',
-                        letterSpacing: 1,
-                        marginTop: "auto"
+                       
                       }}
                     >
                       View Project &rarr;
@@ -183,10 +174,10 @@ export default function Work() {
           {hasMore && !isLoading && !error && (
             <button
               onClick={handleLoadMore}
-                className="btn btn--primary"
+              className="btn btn--primary"
               style={{
                 marginTop: '2rem',
-              
+
               }}
             >
               Load More

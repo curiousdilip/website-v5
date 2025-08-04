@@ -877,8 +877,7 @@ h4 {
 
 .p-showcase__img {
   border-radius: var(--border-radius-400);
-  object-fit: cover;
-  object-position: center top;
+
 }
 
 @media (min-width: 768px) {

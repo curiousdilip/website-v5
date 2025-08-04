@@ -118,8 +118,13 @@ export default function Project({ project }) {
                     key={index}
                     src={image.url}
                     alt={`Project image ${index + 1}`}
-                    width={1232}
-                    height={576}
+                   
+                    width="0"
+    height="0"
+    sizes="100vw"
+    style={{ width: '100%', height: 'auto' }}
+    priority
+                
                   />
                 </motion.div>
 
