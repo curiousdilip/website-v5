@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 
 export default function Footer() {
@@ -20,7 +21,6 @@ export default function Footer() {
 
   return (
     <>
-      {/* <hr /> */}
       <motion.footer
         variants={footerVariants}
         initial="initial"
@@ -30,7 +30,7 @@ export default function Footer() {
         <div className="container">
           <div className="upper-footer">
             <motion.div className="description" variants={footerItemVariants}>
-              <h3>Dilip.</h3>
+              <Link href="/">Dilip.</Link>
               <p>Delivers responsive web solutions and maintaining high client satisfaction</p>
               <motion.div className="socials" variants={footerItemVariants}>
                 <motion.ul>
@@ -81,7 +81,7 @@ export default function Footer() {
                   links: [
                     {
                       text: "Source Code",
-                      href: "https://github.com/curiousdilip/website-final",
+                      href: "https://github.com/curiousdilip/website-v5",
                       external: true,
                     },
                     { text: "Sitemap", href: "/sitemap.xml" },
