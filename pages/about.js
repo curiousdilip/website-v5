@@ -3,6 +3,7 @@ import portrait from '../public/assets/dilip-kumar.jpg';
 import Card from '../components/Card';
 import OtherProject from '../components/OtherProject';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 export default function About() {
   const container = {
@@ -40,12 +41,19 @@ export default function About() {
               </p>
             </motion.div>
 
-            <motion.img
-              src={portrait.src}
-              alt="Web developer with a microphone, black coat and blue background"
-              className="side-by-side__img"
-              variants={item}
-            />
+        
+
+             <Image
+                                    src={portrait.src}
+                                    alt="Web developer with black coat and blue background"
+                                    width="0"
+                                    height="0"
+                                    sizes="100vw"
+                                    style={{ width: '100%', height: 'auto' }}
+                                    priority
+                                     variants={item}
+                                        className="side-by-side__img"
+                                  />
           </motion.section>
 
           <section className="career-path">

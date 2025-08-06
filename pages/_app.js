@@ -11,7 +11,7 @@ const quicksand = Quicksand({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600"],
   display: "swap",
-  variable: "--font-quicksand", // Optional: use as CSS variable
+  variable: "--font-quicksand", 
 });
 export default function MyApp({ Component, pageProps }) {
   const ref = useRef(null);

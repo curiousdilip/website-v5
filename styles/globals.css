@@ -1039,12 +1039,13 @@ footer .upper-footer .description a {
 footer .upper-footer .description .socials ul {
   display: flex;
   list-style: none;
-  gap: 10px;
+  gap: 18px;
   margin-top: 60px;
 }
 
 footer .upper-footer .description .socials ul li a {
   color: #fff;
+  font-size: 18px;
 }
 
 footer .upper-footer .links {

@@ -73,7 +73,8 @@ export default function Footer() {
                   links: [
                     { text: "Projects", href: "/work" },
                     { text: "About", href: "/about" },
-                    { text: "contact", href: "/contact" },
+                    { text: "Contact", href: "/contact" },
+                    { text: "Resume", href: "/resume" },
                   ],
                 },
                 {

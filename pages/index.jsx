@@ -15,8 +15,21 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Dilip Kumar Maurya | Home</title>
-        <meta name="description" content="Personal portfolio of Dilip Kumar, web developer." />
+  <title>Dilip Kumar | Web Developer</title>
+  <meta name="description" content="Dilip Kumar is a web developer based in India, who builds user-friendly and responsive websites to meet your needs." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.dilipmaurya.in/" />
+  <meta property="og:title" content="Dilip Maurya | Web Developer" />
+  <meta property="og:description" content="Dilip Kumar is a web developer based in India, who builds user-friendly and responsive websites to meet your needs." />
+  <meta property="og:image" content="https://www.dilipmaurya.in/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://www.dilipmaurya.in/" />
+  <meta name="twitter:title" content="Dilip Maurya | Web Developer" />
+  <meta name="twitter:description" content="Dilip Kumar is a web developer based in India, who builds user-friendly and responsive websites to meet your needs." />
+  <meta name="twitter:image" content="https://www.dilipmaurya.in/og-image.jpg" />
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="canonical" href="https://www.dilipmaurya.in/" />
       </Head>
 
       <div className="container" style={{ display: 'flex', alignItems: 'center', gap: '3rem', minHeight: '80vh' }}>
