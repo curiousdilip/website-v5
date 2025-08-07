@@ -71,11 +71,43 @@ export default function Contact() {
   return (
     <>
       <Head>
-        <title>Contact | Dilip Kumar Maurya</title>
+        <title>Contact | Dilip Kumar </title>
         <meta
           name="description"
-          content="Whether you are interested in hiring me, to work on a project together or to discuss any other proposal, feel free to contact me anytime."
+          content="Get in touch with Dilip Kumar for collaboration or inquiries about web development and digital solutions."
         />
+        <meta
+          name="keywords"
+          content="Dilip Kumar , contact, web developer, collaboration, inquiries"
+        />
+        <meta name="author" content="Dilip Kumar Maurya" />
+        <meta name="publisher" content="Dilip Kumar Maurya" />
+        <meta name="robots" content="index, follow" />
+        <meta httpEquiv="Content-Language" content="en" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.dilipmaurya.in/contact" />
+        <meta property="og:title" content="Contact | Dilip Kumar" />
+        <meta
+          property="og:description"
+          content="Get in touch with Dilip Kumar for collaboration or inquiries about web development and digital solutions."
+        />
+        <meta
+          property="og:image"
+          content="https://www.dilipmaurya.in/og-image.jpg"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://www.dilipmaurya.in/contact" />
+        <meta name="twitter:title" content="Contact | Dilip Kumar" />
+        <meta
+          name="twitter:description"
+          content="Get in touch with Dilip Kumar for collaboration or inquiries about web development and digital solutions."
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.dilipmaurya.in/og-image.jpg"
+        />
+        <link rel="canonical" href="https://www.dilipmaurya.in/contact" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <div data-scroll-section>
         <div className="container container__padding-block">

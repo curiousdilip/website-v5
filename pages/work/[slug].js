@@ -26,11 +26,66 @@ export default function Project({ project }) {
   return (
     <>
       <Head>
-        <title>{`${project.title} | Portfolio`}</title>
+        <title>{`${project.title} | Dilip Kumar`}</title>
         <meta
           name="description"
+          content={
+            project.metadata?.description ||
+            "Web development project by Dilip Kumar ."
+          }
+        />
+        <meta
+          name="keywords"
+          content={
+            project.metadata?.keywords?.join(", ") ||
+            "web development, project, portfolio, Dilip Kumar "
+          }
+        />
+        <meta name="author" content="Dilip Kumar Maurya" />
+        <meta name="publisher" content="Dilip Kumar Maurya" />
+        <meta name="robots" content="index, follow" />
+        <meta httpEquiv="Content-Language" content="en" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content={`https://www.dilipmaurya.in/work/${project.slug}`}
+        />
+        <meta property="og:title" content={`${project.title} | Dilip Kumar `} />
+        <meta
+          property="og:description"
           content={project.metadata?.description || ""}
         />
+        <meta
+          property="og:image"
+          content={
+            project.metadata?.ogImage ||
+            project.metadata?.gallery?.[0]?.image?.url ||
+            "https://www.dilipmaurya.in/og-image.jpg"
+          }
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:url"
+          content={`https://www.dilipmaurya.in/work/${project.slug}`}
+        />
+        <meta name="twitter:title" content={`${project.title} | Dilip Kumar`} />
+        <meta
+          name="twitter:description"
+          content={project.metadata?.description || ""}
+        />
+        <meta
+          name="twitter:image"
+          content={
+            project.metadata?.ogImage ||
+            project.metadata?.gallery?.[0]?.image?.url ||
+            "https://www.dilipmaurya.in/og-image.jpg"
+          }
+        />
+        <link
+          rel="canonical"
+          href={`https://www.dilipmaurya.in/work/${project.slug}`}
+        />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <div data-scroll-section>
         <div className="container container__padding-block">
