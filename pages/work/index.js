@@ -178,16 +178,19 @@ export default function Work() {
                             : "")
                         : "No description available."}
                     </p>
-                    <Link
-                      title={`Know more about  ${project.title}`}
-                      href={`/work/${project.slug}`}
-                      className="btn btn--secondary"
-                      style={{
-                        alignSelf: "flex-start",
-                      }}
-                    >
-                      View Project &rarr;
-                    </Link>
+                    <h3>
+                      <Link
+                        title={`Know more about  ${project.title}`}
+                        href={`/work/${project.slug}`}
+                        className="btn btn--secondary"
+                        style={{
+                          alignSelf: "flex-start",
+                          lineHeight: "1.6",
+                        }}
+                      >
+                        View Project &rarr;
+                      </Link>
+                    </h3>
                   </div>
                 </motion.div>
               ))}

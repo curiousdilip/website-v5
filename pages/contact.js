@@ -87,10 +87,10 @@ export default function Contact() {
               transition={{ duration: 1, ease: "anticipate" }}
             >
               <h1 className="contact__header-heading">Get in Touch</h1>
-              <p className="contact__header-text">
+              <h2 className="contact__header-text">
                 Reach out for collaborations, questions, or just to say hi. I’m
                 always open to connect!
-              </p>
+              </h2>
             </motion.header>
             <div className="contact__content">
               <ContactForm />

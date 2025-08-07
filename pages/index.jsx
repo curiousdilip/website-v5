@@ -50,7 +50,7 @@ export default function Home() {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1, ease: 'anticipate' }}
             >
-              Hey there, I&apos;m <h1>Dilip Kumar</h1>, a dedicated <h2>web developer</h2> with a passion to empower your business in the digital world. I specialize in developing websites that elevate online presence.
+              Hey there, I&apos;m <h1>Dilip Kumar</h1>, a dedicated <h2>web developer</h2> with a passion to <h3>empower your business</h3> in the digital world. I specialize in developing websites that elevate online presence.
             </motion.div>
 
             <motion.p
