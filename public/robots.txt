@@ -1,4 +1,10 @@
-User-agent: *
+User-agent: bingbot
 Allow: /
 
-Sitemap: https://dilipmaurya.in/sitemap.xml
+User-agent: msnbot
+Allow: /
+
+User-agent: *
+Disallow:
+
+Sitemap: https://www.dilipmaurya.in/sitemap.xml
