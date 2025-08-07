@@ -57,7 +57,7 @@ export default function Footer() {
                     },
                   ].map((item) => (
                     <motion.li key={item.href} variants={footerItemVariants}>
-                      <a href={item.href} target="_blank"rel={item.rel}aria-label={item.label}>
+                      <a href={item.href} target="_blank"rel={item.rel}aria-label={item.label} title={item.label}>
                         <i className={item.icon}></i>
                       </a>
                     </motion.li>
@@ -113,9 +113,9 @@ export default function Footer() {
                   <ul>
                     {col.links.map((lnk) => (
                       <li key={lnk.href}>
-                        <a href={lnk.href} target={lnk.external ? "_blank" : undefined}   rel={lnk.rel || (lnk.external ? "noopener noreferrer" : undefined)}>
+                        <Link href={lnk.href} target={lnk.external ? "_blank" : undefined}   rel={lnk.rel || (lnk.external ? "noopener noreferrer" : undefined)} title={lnk.text}>
                           {lnk.text}
-                        </a>
+                        </Link>
                       </li>
                     ))}
                   </ul>

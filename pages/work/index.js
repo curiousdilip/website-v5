@@ -1,8 +1,8 @@
-import { useEffect, useState } from 'react';
-import Link from 'next/link';
-import { motion } from 'framer-motion';
-import Head from 'next/head';
-import Image from 'next/image';
+import { useEffect, useState } from "react";
+import Link from "next/link";
+import { motion } from "framer-motion";
+import Head from "next/head";
+import Image from "next/image";
 
 export default function Work() {
   const [error, setError] = useState(false);
@@ -34,7 +34,7 @@ export default function Work() {
       const url = `https://api.cosmicjs.com/v3/buckets/my-website-website/objects?pretty=true&query=%7B%22type%22:%22works%22%7D&limit=${limit}&skip=${currentSkip}&read_key=n3jLniptSDz6sl6YWVXuEict2MsOxs3jN3sxxFOBg2vY8d0NIE&depth=1&props=slug,title,metadata,type`;
 
       const response = await fetch(url);
-      if (!response.ok) throw new Error('Network response was not ok');
+      if (!response.ok) throw new Error("Network response was not ok");
 
       const data = await response.json();
 
@@ -42,7 +42,7 @@ export default function Work() {
         if (currentSkip === 0) {
           setProjects(data.objects);
         } else {
-          setProjects(prev => [...prev, ...data.objects]);
+          setProjects((prev) => [...prev, ...data.objects]);
         }
         // If fetched less than limit, there are no more projects
         if (data.objects.length < limit) {
@@ -88,7 +88,7 @@ export default function Work() {
             className="projects-heading"
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1, ease: 'anticipate' }}
+            transition={{ duration: 1, ease: "anticipate" }}
           >
             Crafting Digital Solutions
           </motion.h1>
@@ -102,10 +102,10 @@ export default function Work() {
             initial="hidden"
             animate="visible"
             style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-              gap: '2rem',
-              marginTop: '2.5rem',
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+              gap: "2rem",
+              marginTop: "2.5rem",
             }}
           >
             {projects.length > 0 &&
@@ -115,52 +115,75 @@ export default function Work() {
                   variants={item}
                   className="project-card"
                   style={{
-                    display: 'flex',
-                    flexDirection: 'column',
-                    borderRadius: '12px',
-                    background: '#131313',
-                    boxShadow: '0 4px 32px 0 rgb(0 0 0 / 6%)',
-                    overflow: 'hidden',
+                    display: "flex",
+                    flexDirection: "column",
+                    borderRadius: "12px",
+                    background: "#131313",
+                    boxShadow: "0 4px 32px 0 rgb(0 0 0 / 6%)",
+                    overflow: "hidden",
                     minHeight: 420,
-                    border: '1px solid #222',
+                    border: "1px solid #222",
                   }}
                 >
                   {project.metadata?.gallery?.[0]?.image?.url && (
-                    <div style={{ width: "100%", height: "180px", overflow: "hidden" }}>
-
-
+                    <div
+                      style={{
+                        width: "100%",
+                        height: "180px",
+                        overflow: "hidden",
+                      }}
+                    >
                       <Image
                         src={project.metadata.gallery[0].image.url}
                         alt={project.title}
                         width="0"
                         height={180}
                         sizes="100vw"
-                        style={{ width: '100%', height: 'auto' }}
+                        style={{ width: "100%", height: "auto" }}
                         priority
                       />
-
                     </div>
                   )}
-                  <div style={{ padding: '1.5rem', flexGrow: 1, display: 'flex', flexDirection: 'column' }}>
-                    <h2 className="project-card-title" style={{ fontSize: "1.4rem", fontWeight: 600, margin: "0 0 1rem 0" }}>
+                  <div
+                    style={{
+                      padding: "1.5rem",
+                      flexGrow: 1,
+                      display: "flex",
+                      flexDirection: "column",
+                    }}
+                  >
+                    <h2
+                      className="project-card-title"
+                      style={{
+                        fontSize: "1.4rem",
+                        fontWeight: 600,
+                        margin: "0 0 1rem 0",
+                      }}
+                    >
                       {project.title}
                     </h2>
-                    <p className="project-card-desc" style={{
-                      color: "#bbb",
-                      fontSize: '1rem',
-                      flexGrow: 1,
-                      marginBottom: '1.5rem',
-                    }}>
+                    <p
+                      className="project-card-desc"
+                      style={{
+                        color: "#bbb",
+                        fontSize: "1rem",
+                        flexGrow: 1,
+                        marginBottom: "1.5rem",
+                      }}
+                    >
                       {project.metadata?.description
-                        ? project.metadata.description.slice(0, 100) + (project.metadata.description.length > 100 ? "..." : "")
+                        ? project.metadata.description.slice(0, 100) +
+                          (project.metadata.description.length > 100
+                            ? "..."
+                            : "")
                         : "No description available."}
                     </p>
                     <Link
+                      title={`Know more about  ${project.title}`}
                       href={`/work/${project.slug}`}
                       className="btn btn--secondary"
                       style={{
-                        alignSelf: 'flex-start',
-                       
+                        alignSelf: "flex-start",
                       }}
                     >
                       View Project &rarr;
@@ -176,8 +199,7 @@ export default function Work() {
               onClick={handleLoadMore}
               className="btn btn--primary"
               style={{
-                marginTop: '2rem',
-
+                marginTop: "2rem",
               }}
             >
               Load More

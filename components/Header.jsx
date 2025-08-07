@@ -53,22 +53,22 @@ export default function Header() {
 
         <ul className="nav__list" id="primary-nav" aria-expanded={isNavOpen}>
           <li className="nav__list-item">
-            <Link href="/" onClick={toggleNav}>
+            <Link href="/" onClick={toggleNav} title="Home">
              Home
             </Link>
           </li>
           <li className="nav__list-item">
-            <Link href="/about" onClick={toggleNav}>
+            <Link href="/about" onClick={toggleNav} title="About">
               About
             </Link>
           </li>
           <li className="nav__list-item">
-            <Link href="/work" onClick={toggleNav}>
+            <Link href="/work" onClick={toggleNav} title="Work"> 
            Work
             </Link>
           </li>
           <li className="nav__list-item">
-            <Link href="/contact" onClick={toggleNav}>
+            <Link href="/contact" onClick={toggleNav} title="Contact">
             Contact
             </Link>
           </li>

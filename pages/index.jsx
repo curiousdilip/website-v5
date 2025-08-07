@@ -79,6 +79,7 @@ export default function Home() {
                   initial={{ opacity: 0, scale: 0.5 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 1, delay: 0.25 + index * 0.15, ease: "anticipate" }}
+                  title={link.label}
                 >
                   {link.label}
                 </motion.a>

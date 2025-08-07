@@ -1,27 +1,28 @@
-import Head from 'next/head';
-import { useEffect, useState } from 'react';
-import { motion } from 'framer-motion';
-import ContactForm from '../components/ContactForm';
+import Head from "next/head";
+import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
+import ContactForm from "../components/ContactForm";
+import Link from "next/link";
 
 export default function Contact() {
-  const [city, setCity] = useState('');
-  const [country, setCountry] = useState('');
-  const [temp, setTemp] = useState('');
-  const [weather, setWeather] = useState('');
-  const [formattedDateTime, setFormattedDateTime] = useState('');
+  const [city, setCity] = useState("");
+  const [country, setCountry] = useState("");
+  const [temp, setTemp] = useState("");
+  const [weather, setWeather] = useState("");
+  const [formattedDateTime, setFormattedDateTime] = useState("");
 
   const capitalizeWords = (str) =>
     str
-      .split(' ')
+      .split(" ")
       .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-      .join(' ');
+      .join(" ");
 
   const getData = async () => {
     try {
       const response = await fetch(
-        'https://api.openweathermap.org/data/2.5/weather?q=Dwarka,Delhi&units=metric&appid=dfc884ab11e96f832d54aa9a6136c037'
+        "https://api.openweathermap.org/data/2.5/weather?q=Dwarka,Delhi&units=metric&appid=dfc884ab11e96f832d54aa9a6136c037"
       );
-      if (!response.ok) throw new Error('Failed to fetch weather data');
+      if (!response.ok) throw new Error("Failed to fetch weather data");
       const data = await response.json();
 
       setCity(data.name);
@@ -34,24 +35,25 @@ export default function Contact() {
       const localTime = new Date(utcTime + data.timezone * 1000);
 
       const options = {
-        day: '2-digit',
-        month: '2-digit',
-        year: 'numeric',
-        hour: '2-digit',
-        minute: '2-digit',
+        day: "2-digit",
+        month: "2-digit",
+        year: "numeric",
+        hour: "2-digit",
+        minute: "2-digit",
         hour12: false,
       };
-      const dateFormatter = new Intl.DateTimeFormat('de-DE', options);
+      const dateFormatter = new Intl.DateTimeFormat("de-DE", options);
       const parts = dateFormatter.formatToParts(localTime);
 
-      let formattedDate = '';
-      let formattedTime = '';
+      let formattedDate = "";
+      let formattedTime = "";
       for (const part of parts) {
-        if (['day', 'month', 'year'].includes(part.type)) {
+        if (["day", "month", "year"].includes(part.type)) {
           formattedDate += part.value;
-          if (part.type === 'day' || part.type === 'month') formattedDate += '.';
-        } else if (part.type === 'hour' || part.type === 'minute') {
-          if (formattedTime !== '') formattedTime += ':';
+          if (part.type === "day" || part.type === "month")
+            formattedDate += ".";
+        } else if (part.type === "hour" || part.type === "minute") {
+          if (formattedTime !== "") formattedTime += ":";
           formattedTime += part.value;
         }
       }
@@ -82,12 +84,13 @@ export default function Contact() {
               className="contact__header"
               initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 1, ease: 'anticipate' }}
+              transition={{ duration: 1, ease: "anticipate" }}
             >
-              <h1 className="contact__header-heading">Get in Touch
-
-</h1>
-              <p className="contact__header-text">Reach out for collaborations, questions, or just to say hi. I’m always open to connect!</p>
+              <h1 className="contact__header-heading">Get in Touch</h1>
+              <p className="contact__header-text">
+                Reach out for collaborations, questions, or just to say hi. I’m
+                always open to connect!
+              </p>
             </motion.header>
             <div className="contact__content">
               <ContactForm />
@@ -95,7 +98,7 @@ export default function Contact() {
                 className="contact__content-info"
                 initial={{ opacity: 0, scale: 0.5 }}
                 animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 1, ease: 'anticipate' }}
+                transition={{ duration: 1, ease: "anticipate" }}
               >
                 <div className="contact__content-info__data">
                   <h3 className="body-s">Location</h3>
@@ -113,18 +116,38 @@ export default function Contact() {
                 <div className="contact__content-info__data">
                   <h3 className="body-s">Get in Touch</h3>
                   <div>
-                    <a href="https://www.linkedin.com/in/curiousdilip/" target="_blank" rel="noopener noreferrer">
+                    <Link
+                      href="https://www.linkedin.com/in/curiousdilip/"
+                      target="_blank"
+                      rel="me noopener noreferrer"
+                      title="Linkedin"
+                    >
                       LinkedIn
-                    </a>{' '}
-                    <a href="https://www.x.com/curiousdilip/" target="_blank" rel="noopener noreferrer">
+                    </Link>{" "}
+                    <Link
+                      href="https://www.x.com/curiousdilip/"
+                      target="_blank"
+                      rel="me noopener noreferrer"
+                      title="Twitter"
+                    >
                       Twitter
-                    </a>{' '}
-                    <a href="https://github.com/curiousdilip" target="_blank" rel="noopener noreferrer">
+                    </Link>{" "}
+                    <Link
+                      href="https://github.com/curiousdilip"
+                      target="_blank"
+                      rel="me noopener noreferrer"
+                      title="Github"
+                    >
                       GitHub
-                    </a>
-                     <a href="https://codepen.io/curiousdilip" target="_blank" rel="noopener noreferrer">
+                    </Link>
+                    <Link
+                      href="https://codepen.io/curiousdilip"
+                      target="_blank"
+                      rel="me noopener noreferrer"
+                      title="Codepen"
+                    >
                       Codepen
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </motion.div>
