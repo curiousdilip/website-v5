@@ -20,19 +20,19 @@ export default function Home() {
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.dilipmaurya.in/" />
-  <meta property="og:title" content="Dilip Maurya | Web Developer" />
+  <meta property="og:title" content="Dilip Kumar | Web Developer" />
   <meta property="og:description" content="Dilip Kumar is a web developer based in India, who builds user-friendly and responsive websites to meet your needs." />
   <meta property="og:image" content="https://www.dilipmaurya.in/og-image.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:url" content="https://www.dilipmaurya.in/" />
-  <meta name="twitter:title" content="Dilip Maurya | Web Developer" />
+  <meta name="twitter:title" content="Dilip Kumar | Web Developer" />
   <meta name="twitter:description" content="Dilip Kumar is a web developer based in India, who builds user-friendly and responsive websites to meet your needs." />
   <meta name="twitter:image" content="https://www.dilipmaurya.in/og-image.jpg" />
   <link rel="icon" href="/favicon.ico" />
   <link rel="canonical" href="https://www.dilipmaurya.in/" />
   <meta name="robots" content="index, follow" />
-  <meta name="author" content="Dilip Maurya" />
-  <meta name="publisher" content="Dilip Maurya" />
+  <meta name="author" content="Dilip Kumar Maurya" />
+  <meta name="publisher" content="Dilip Kumar Maurya" />
   <meta httpEquiv="Content-Language" content="en" />
   <meta name="keywords" content= "Dilip kumar, web developer, curiousdilip," />  
       </Head>

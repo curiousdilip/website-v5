@@ -38,26 +38,26 @@ export default function Footer() {
                     {
                       href: "https://github.com/curiousdilip",
                       label: "github",
-                      icon: "bi bi-github",
+                      icon: "bi bi-github", rel: "me noopener noreferrer",
                     },
                     {
                       href: "https://www.linkedin.com/in/curiousdilip/",
                       label: "linkedin",
-                      icon: "bi bi-linkedin",
+                      icon: "bi bi-linkedin", rel: "me noopener noreferrer",
                     },
                     {
                       href: "https://x.com/curiousdilip/",
                       label: "twitter",
-                      icon: "bi bi-twitter-x",
+                      icon: "bi bi-twitter-x", rel: "me noopener noreferrer",
                     },
                     {
                       href: "mailto:curiousdilip@gmail.com",
                       label: "mail me",
-                      icon: "bi bi-envelope",
+                      icon: "bi bi-envelope", rel: " noopener noreferrer",
                     },
                   ].map((item) => (
                     <motion.li key={item.href} variants={footerItemVariants}>
-                      <a href={item.href} target="_blank" rel="noopener noreferrer" aria-label={item.label}>
+                      <a href={item.href} target="_blank"rel={item.rel}aria-label={item.label}>
                         <i className={item.icon}></i>
                       </a>
                     </motion.li>
@@ -84,6 +84,8 @@ export default function Footer() {
                       text: "Source Code",
                       href: "https://github.com/curiousdilip/website-v5",
                       external: true,
+                      rel: "me noopener noreferrer",
+
                     },
                     { text: "Sitemap", href: "/sitemap.xml" },
                   ],
@@ -95,11 +97,13 @@ export default function Footer() {
                       text: "Frontend Mentor",
                       href: "https://www.frontendmentor.io/profile/curiousdilip",
                       external: true,
+                      rel:"me noopener noreferrer"
                     },
                     {
                       text: "Codepen",
                       href: "https://codepen.io/curiousdilip",
                       external: true,
+                      rel: "me noopener noreferrer",
                     },
                   ],
                 },
@@ -109,7 +113,7 @@ export default function Footer() {
                   <ul>
                     {col.links.map((lnk) => (
                       <li key={lnk.href}>
-                        <a href={lnk.href} target={lnk.external ? "_blank" : undefined} rel={lnk.external ? "noopener noreferrer" : undefined}>
+                        <a href={lnk.href} target={lnk.external ? "_blank" : undefined}   rel={lnk.rel || (lnk.external ? "noopener noreferrer" : undefined)}>
                           {lnk.text}
                         </a>
                       </li>
