@@ -30,6 +30,11 @@ export default function Home() {
   <meta name="twitter:image" content="https://www.dilipmaurya.in/og-image.jpg" />
   <link rel="icon" href="/favicon.ico" />
   <link rel="canonical" href="https://www.dilipmaurya.in/" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Dilip Maurya" />
+  <meta name="publisher" content="Dilip Maurya" />
+  <meta httpEquiv="Content-Language" content="en" />
+  <meta name="keywords" content= "Dilip kumar, web developer, curiousdilip," />  
       </Head>
 
       <div className="container" style={{ display: 'flex', alignItems: 'center', gap: '3rem', minHeight: '80vh' }}>
@@ -39,14 +44,14 @@ export default function Home() {
 
 
           <div className="hero__info" style={{ flex: 1 }}>
-            <motion.p
+            <motion.div
               className="hero__text"
               initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1, ease: 'anticipate' }}
             >
-              Hey there, I&apos;m Dilip Kumar, a dedicated web developer with a passion to empower your business in the digital world. I specialize in developing websites that elevate online presence.
-            </motion.p>
+              Hey there, I&apos;m <h1>Dilip Kumar</h1>, a dedicated <h2>web developer</h2> with a passion to empower your business in the digital world. I specialize in developing websites that elevate online presence.
+            </motion.div>
 
             <motion.p
               className="hero__text"

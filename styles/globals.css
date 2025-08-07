@@ -537,6 +537,22 @@ h4 {
   font-weight: 300;
 }
 
+.hero__text h1 {
+  font-size: var(--fs-body) !important;
+  max-width: 480px;
+  display: inline;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+
+.hero__text h2 {
+  font-size: var(--fs-body) !important;
+  display: inline;
+  max-width: 480px;
+  margin-bottom: 16px;
+  font-weight: 300;
+}
+
 @media (min-width: 992px) {
   .hero {
     grid-auto-flow: column;
