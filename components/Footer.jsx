@@ -87,7 +87,11 @@ export default function Footer() {
                       rel: "me noopener noreferrer",
 
                     },
-                    { text: "Sitemap", href: "/sitemap.xml" },
+                    { text: "Sitemap", href: "/sitemap.xml",
+                    external: true,
+
+                     },
+                    
                   ],
                 },
                 {
