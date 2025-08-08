@@ -17,6 +17,9 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@next/bundle-analyzer": "^15.4.6"
+    "@fullhuman/postcss-purgecss": "^7.0.2",
+    "@next/bundle-analyzer": "^15.4.6",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-preset-env": "^10.2.4"
   }
 }
