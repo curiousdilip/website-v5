@@ -144,7 +144,7 @@ export default function Work() {
             {projects.length > 0 &&
               [...projects].reverse().map((project) => (
                 <motion.div
-                  key={project.id}
+                  key={project.slug}
                   variants={item}
                   className="project-card"
                   style={{

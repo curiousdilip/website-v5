@@ -173,7 +173,7 @@ ul {
 }
 
 html {
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
   font-family: var(--font-quicksand), sans-serif;
 }
 

@@ -2,6 +2,7 @@ import Head from "next/head";
 import { motion } from "framer-motion";
 import Lottie from "lottie-react";
 import animationData from "../public/developer.json";
+import Link from "next/link";
 
 export default function Home() {
   const links = [
@@ -102,8 +103,10 @@ export default function Home() {
               className="hero__links"
             >
               {links.map((link, index) => (
-                <motion.a
+                <motion.div
                   key={link.href}
+                >
+                  <Link  
                   href={link.href}
                   rel="noopener noreferrer"
                   style={{ color: "inherit", textDecoration: "underline" }}
@@ -114,10 +117,11 @@ export default function Home() {
                     delay: 0.25 + index * 0.15,
                     ease: "anticipate",
                   }}
+
                   title={link.label}
-                >
-                  {link.label}
-                </motion.a>
+                  >  {link.label}</Link>
+                 
+                </motion.div>
               ))}
             </motion.div>
           </div>
