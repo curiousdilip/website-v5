@@ -51,7 +51,7 @@ export default function Footer() {
                       icon: "bi bi-twitter-x", rel: "me noopener noreferrer",
                     },
                     {
-                      href: "mailto:curiousdilip@gmail.com",
+                      href: "mailto:contact@dilipmaurya.in",
                       label: "mail me",
                       icon: "bi bi-envelope", rel: " noopener noreferrer",
                     },

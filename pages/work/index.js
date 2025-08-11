@@ -9,7 +9,7 @@ export default function Work() {
   const [isLoading, setIsLoading] = useState(true);
   const [projects, setProjects] = useState([]);
   const [skip, setSkip] = useState(0);
-  const limit = 10;
+  const limit = 20;
   const [hasMore, setHasMore] = useState(true);
 
   const container = {
@@ -97,7 +97,7 @@ export default function Work() {
         />
         <meta
           property="og:image"
-          content="https://www.dilipmaurya.in/images/work-og-image.jpg"
+          content="https://www.dilipmaurya.in/og-image.jpg"
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:url" content="https://www.dilipmaurya.in/work" />
@@ -166,15 +166,22 @@ export default function Work() {
                         overflow: "hidden",
                       }}
                     >
-                      <Image
-                        src={project.metadata.gallery[0].image.url}
-                        alt={project.title}
-                        width="0"
-                        height={180}
-                        sizes="100vw"
-                        style={{ width: "100%", height: "auto" }}
-                        priority
-                      />
+                      <div
+                        style={{
+                          position: "relative",
+                          width: "387px",
+                          height: "218px",
+                        }}
+                      >
+                        <Image
+                          src={project.metadata.gallery[0].image.url}
+                          alt={project.title}
+                          fill
+                          sizes="(max-width: 768px) 100vw, 387px"
+                          style={{ objectFit: "cover" }}
+                          priority
+                        />
+                      </div>
                     </div>
                   )}
                   <div
@@ -229,7 +236,6 @@ export default function Work() {
               ))}
           </motion.div>
 
-          {/* Load More Button */}
           {hasMore && !isLoading && !error && (
             <button
               onClick={handleLoadMore}
