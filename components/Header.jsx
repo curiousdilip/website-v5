@@ -74,7 +74,7 @@ export default function Header() {
           </li>
         </ul>
 
-        <div className="nav__availability-status">
+        {/* <div className="nav__availability-status">
           <div
             className="nav__availability-status--toggle"
             aria-controls="availability-status-message"
@@ -105,6 +105,53 @@ export default function Header() {
             id="availability-status-message"
             aria-expanded={isStatusOpen}
             
+          >
+            <p className="nav__availability-status__title">
+              Project Availability Status
+            </p>
+
+            <p
+              className={
+                'body-s color--' +
+                availabilityStatuses[message].status.toLowerCase()
+              }
+            >
+              {availabilityStatuses[message].message}
+            </p>
+          </div>
+        </div> */}
+
+<div className="nav__availability-status">
+          <button
+            className="nav__availability-status--toggle"
+            aria-controls="availability-status-message"
+            aria-expanded={isStatusOpen}
+            aria-label={
+              isStatusOpen
+                ? 'Hide availability status'
+                : 'Show availability status'
+            }
+            onClick={toggleStatus}
+          >
+            <p className="body-s">Current Status:</p>
+            <p
+              className={
+                'body-m color--' +
+                availabilityStatuses[message].status.toLowerCase() +
+                ' font-weight--medium'
+              }
+            >
+              {availabilityStatuses[message].status}
+            </p>
+          </button>
+
+          <div
+            id="availability-status-message"
+            className={`nav__availability-status--message ${
+              isStatusOpen ? 'is-open' : 'is-closed'
+            }`}
+            role="region"
+            aria-hidden={!isStatusOpen}
           >
             <p className="nav__availability-status__title">
               Project Availability Status

@@ -421,6 +421,10 @@ h4 {
   opacity: 0;
 }
 
+.nav__availability-status--toggle {
+  color: var(--clr-neutral-100);
+}
+
 .nav__availability-status--message[aria-expanded="true"] {
   pointer-events: all;
   opacity: 1;
@@ -429,6 +433,18 @@ h4 {
 .nav__availability-status__title {
   margin-bottom: 16px;
   color: var(--clr-neutral-600);
+}
+
+.nav__availability-status--message.is-open {
+  max-height: 200px;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.nav__availability-status--message.is-closed {
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(-5px);
 }
 
 @media (min-width: 768px) {
