@@ -169,8 +169,8 @@ export default function Work() {
                       <div
                         style={{
                           position: "relative",
-                          width: "387px",
-                          height: "218px",
+                          width: "100%",
+                          paddingBottom: "56.4%",
                         }}
                       >
                         <Image
