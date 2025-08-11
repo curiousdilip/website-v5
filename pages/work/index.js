@@ -90,7 +90,7 @@ export default function Work() {
         <meta httpEquiv="Content-Language" content="en" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.dilipmaurya.in/work" />
-        <meta property="og:title" content="Work | Dilip Kumar " />
+        <meta property="og:title" content="Portfolio | Dilip Kumar " />
         <meta
           property="og:description"
           content="Explore the portfolio of Dilip Kumar, featuring a collection of modern, responsive web development projects."
@@ -101,7 +101,7 @@ export default function Work() {
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:url" content="https://www.dilipmaurya.in/work" />
-        <meta name="twitter:title" content="Work | Dilip Kumar " />
+        <meta name="twitter:title" content="Portfolio | Dilip Kumar " />
         <meta
           name="twitter:description"
           content="Explore the portfolio of Dilip Kumar, featuring a collection of modern, responsive web development projects."
