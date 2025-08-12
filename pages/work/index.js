@@ -142,7 +142,7 @@ export default function Work() {
             }}
           >
             {projects.length > 0 &&
-              [...projects].reverse().map((project) => (
+              [...projects].map((project) => (
                 <motion.div
                   key={project.slug}
                   variants={item}
