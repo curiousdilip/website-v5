@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'bootstrap-icons';
+  src: url('/_next/static/media/bootstrap-icons.154365ac.woff2') format('woff2');
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+
 :root {
   --clr-neutral-100: #fff;
   --clr-neutral-600: #808080;
