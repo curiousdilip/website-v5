@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import Header from '../components/Header';
 import { motion } from 'framer-motion';
 
 export default function Custom404() {
