@@ -501,9 +501,14 @@ h4 {
   }
 }
 
-/* Error 404 */
 .err__container {
   display: grid;
+}
+
+@media (max-width:768px) {
+  .err__container {
+  padding-block: 0 180px;
+}
 }
 
 .err__btn-wrapper {
@@ -541,6 +546,7 @@ h4 {
   place-content: center;
   place-items: center;
   min-height: 800px;
+  
 }
 
 .hero__heading {
@@ -576,6 +582,10 @@ h4 {
 .hero__text h1 {
   text-transform: capitalize;
 }
+@media (max-width: 768px) {
+  .hero {
+   padding-block: 0 180px ;
+  }}
 
 @media (min-width: 992px) {
   .hero {

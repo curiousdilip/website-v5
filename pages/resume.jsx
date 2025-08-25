@@ -70,7 +70,6 @@ export default function Resume() {
                 className="resume__embed-container"
                 style={{ margin: "2rem 0", textAlign: "center" }}
               >
-                {/* Replace '/resume.pdf' with your actual resume file path in the public folder */}
                 <iframe
                   src="/resume.pdf"
                   width="100%"

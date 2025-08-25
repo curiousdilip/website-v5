@@ -30,8 +30,8 @@ export default function Footer() {
         <div className="container">
           <div className="upper-footer">
             <motion.div className="description" variants={footerItemVariants}>
-              <Link href="/">Dilip.</Link>
-              <p>Delivers responsive web solutions and maintaining high client satisfaction</p>
+              {/* <Link href="/">Dilip.</Link> */}
+              <p>Dilip Kumar is a web developer based in India, who builds user-friendly and responsive websites to meet your needs.</p>
               <motion.div className="socials" variants={footerItemVariants}>
                 <motion.ul>
                   {[

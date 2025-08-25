@@ -14,8 +14,8 @@ export default function Custom404() {
       <Head>
         <title>Page Not Found | 404</title>
       </Head>
-      <Header />
       <main>
+      
         <div className="container err__container">
           <motion.h1
             className="body-l err__heading"
@@ -35,6 +35,9 @@ export default function Custom404() {
             </Link>
             <Link href="/about" className="btn btn--secondary">
             My Story
+            </Link>
+             <Link href="/resume" className="btn btn--secondary">
+       Hire Me
             </Link>
           </motion.div>
         </div>
