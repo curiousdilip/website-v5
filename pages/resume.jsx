@@ -5,6 +5,26 @@ export default function Resume() {
   return (
     <>
       <Head>
+     
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "CreativeWork",
+              "name": "Resume of Dilip Kumar Maurya",
+              "author": {
+                "@type": "Person",
+                "name": "Dilip Kumar Maurya",
+                "url": "https://www.dilipmaurya.in"
+              },
+              "url": "https://www.dilipmaurya.in/resume",
+              "encodingFormat": "application/pdf",
+              "datePublished": "2025-09-21"
+            })
+          }}
+        />
+
         <title>Resume | Dilip Kumar</title>
         <meta
           name="description"

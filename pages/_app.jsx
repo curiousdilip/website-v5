@@ -49,6 +49,26 @@ export default function MyApp({ Component, pageProps }) {
           gtag('config', 'G-W78VYNSQ67');
         `}
       </Script>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Dilip Kumar Maurya",
+            "url": "https://www.dilipmaurya.in",
+            "jobTitle": "Web Developer",
+            "sameAs": [
+              "https://linkedin.com/in/curiousdilip",
+              "https://github.com/curiousdilip"
+            ],
+            "worksFor": {
+              "@type": "Organization",
+              "name": "Freelance"
+            }
+          })
+        }}
+      />
       <Header />
       <main data-scroll-container ref={ref} className={quicksand.className}>
         <Component {...pageProps} />
