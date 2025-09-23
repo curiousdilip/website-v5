@@ -53,14 +53,22 @@ export default function MyApp({ Component, pageProps }) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
-            "@context": "https://schema.org",
+            "@context": "http://schema.org",
             "@type": "Person",
+            "url": "https://www.dilipmaurya.in/",
             "name": "Dilip Kumar Maurya",
-            "url": "https://www.dilipmaurya.in",
-            "jobTitle": "Web Developer",
+            "logo": "https://www.dilipmaurya.in/img/logo.svg",
+            "description": "Dilip Kumar is a web developer based in India, who builds user-friendly and responsive websites to meet your needs.",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+91 98997 42615",
+              "contactType": "customer service"
+            },
             "sameAs": [
-              "https://linkedin.com/in/curiousdilip",
-              "https://github.com/curiousdilip"
+              "https://twitter.com/curiousdilip",
+              "https://www.github.com/curiousdilip",
+              "https://www.linkedin.com/in/curiousdilip/",
+
             ],
             "worksFor": {
               "@type": "Organization",
