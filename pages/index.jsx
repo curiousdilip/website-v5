@@ -103,7 +103,109 @@ export default function Home() {
             </motion.div>
           </div>
         </div>
-         <div className="projects">
+          <div className="services">
+          <motion.h2
+            className="service-heading"
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1, ease: "anticipate" }}
+          >
+           Services
+          </motion.h2>  
+
+          <div className="serivce-cards-grid" style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit, minmax(300px, 3fr))",
+            gap: "2rem",
+
+          }}
+            variants={container}
+            initial="hidden"
+            animate="visible"
+          >
+            <div className="service-card" style={{
+              // display: "flex",
+              // flexDirection: "column",
+              textAlign:"center",
+              borderRadius: "12px",
+              background: "#131313",
+              boxShadow: "0 4px 32px 0 rgb(0 0 0 / 6%)",
+              overflow: "hidden",
+              // minHeight: 420,
+              height:"auto",
+              border: "1px solid #222",
+            }}>
+               <div style={{  textAlign:"center", width:"100%" }}>
+                <i className="bi bi-cursor" style={{fontSize:"50px", padding:"20px", border:"2px solid white", borderRadius:"50%"}}></i>
+                </div>
+           
+              <div style={{ padding: "1.5rem", flexGrow: 1, display: "flex", flexDirection: "column" }}>
+                <h3 style={{ fontSize: "1.4rem", fontWeight: 600, marginBottom: "1rem" }}>Web Development
+                </h3>
+                <p style={{ color: "rgb(187, 187, 187)", fontSize: "1rem", flexGrow: 1, }}>
+                  Creation of user interfaces and user experiences for websites and web applications.
+
+                </p>
+             
+              </div>
+            </div>
+            <div className="service-card" style={{
+             
+              borderRadius: "12px",
+              background: "#131313",
+              boxShadow: "0 4px 32px 0 rgb(0 0 0 / 6%)",
+              overflow: "hidden",
+              // minHeight: 100,
+              border: "1px solid #222",
+            }}>
+            
+                 <div style={{ position: "relative", width: "100%",}}>
+
+
+                  <i className="bi bi-graph-up-arrow"></i>
+                </div>
+              <div style={{ padding: "1.5rem", flexGrow: 1, display: "flex", flexDirection: "column" }}>
+                <h3 style={{ fontSize: "1.4rem", fontWeight: 600, marginBottom: "1rem" }}>Analytics & SEO
+</h3>
+                <p style={{ color: "rgb(187, 187, 187)", fontSize: "1rem", flexGrow: 1, }}>
+                Implement tracking & analytics tools to monitor website performance & improve SEO
+
+                </p>
+              
+              </div>
+            </div>
+            <div className="service-card" style={{
+           
+              borderRadius: "12px",
+              background: "#131313",
+              boxShadow: "0 4px 32px 0 rgb(0 0 0 / 6%)",
+              overflow: "hidden",
+              // minHeight: 420,
+              border: "1px solid #222",
+            }}>
+            
+                 <div style={{ position: "relative", width: "100%", }}>
+
+               <i className="bi bi-code-slash"></i>
+                </div>
+              <div style={{ padding: "1.5rem", flexGrow: 1, display: "flex", flexDirection: "column" }}>
+                <h3 style={{ fontSize: "1.4rem", fontWeight: 600, marginBottom: "1rem" }}>Web Security
+
+                </h3>
+                <p style={{ color: "rgb(187, 187, 187)", fontSize: "1rem", flexGrow: 1,  }}>
+                Ensuring web applications are secure by addressing common vulnerabilities.
+
+                </p>
+             
+              </div>
+            </div>
+
+
+          </div>
+
+
+        </div>
+        <div className="projects">
           <motion.h2
             className="projects-heading"
             initial={{ opacity: 0, scale: 0.5 }}
@@ -113,7 +215,7 @@ export default function Home() {
             Key Projects
           </motion.h2>
 
-          <div class="project-cards-grid" style={{
+          <div className="project-cards-grid" style={{
             display: "grid",
             gridTemplateColumns: "repeat(auto-fit, minmax(300px, 3fr))",
             gap: "2rem",
@@ -229,15 +331,15 @@ export default function Home() {
           </div>
 
 
-      <div className="block" style={{display:"block", margin:"0 auto", marginBottom:"60px"}}>
-              <a href="/work" className="btn btn--primary" >
-            View More Project</a>
-      </div>
-       
-      </div>
+          <div className="block" style={{ display: "block", margin: "0 auto", marginBottom: "60px" }}>
+            <a href="/work" className="btn btn--primary" >
+              View More Project</a>
+          </div>
+
+        </div>
       </div>
 
-     
+
     </>
   );
 }
