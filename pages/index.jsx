@@ -15,18 +15,18 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Dilip Kumar | Web Developer</title>
+        <title>Dilip Kumar | Professional Web Developer in Delhi</title>
         <meta
           name="description"
-          content="Dilip Kumar is a web developer based in India, who builds user-friendly and responsive websites to meet your needs."
+          content="Dilip Kumar is an experienced web developer in India, specializing in responsive, user-friendly websites and custom solutions to grow your business. Contact today."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.dilipmaurya.in/" />
-        <meta property="og:title" content="Dilip Kumar | Web Developer" />
+        <meta property="og:title" content="Dilip Kumar | Professional Web Developer in Delhi" />
         <meta
           property="og:description"
-          content="Dilip Kumar is a web developer based in India, who builds user-friendly and responsive websites to meet your needs."
+          content="Dilip Kumar is an experienced web developer in India, specializing in responsive, user-friendly websites and custom solutions to grow your business. Contact today."
         />
         <meta
           property="og:image"
@@ -34,10 +34,10 @@ export default function Home() {
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:url" content="https://www.dilipmaurya.in/" />
-        <meta name="twitter:title" content="Dilip Kumar | Web Developer" />
+        <meta name="twitter:title" content="Dilip Kumar | Professional Web Developer in Delhi" />
         <meta
           name="twitter:description"
-          content="Dilip Kumar is a web developer based in India, who builds user-friendly and responsive websites to meet your needs."
+          content="Dilip Kumar is an experienced web developer in India, specializing in responsive, user-friendly websites and custom solutions to grow your business. Contact today."
         />
         <meta
           name="twitter:image"
