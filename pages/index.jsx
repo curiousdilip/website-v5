@@ -3,14 +3,23 @@ import { motion } from "framer-motion";
 import Lottie from "lottie-react";
 import animationData from "../public/developer.json";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
-  const links = [
-    { href: "/work", label: "What I have Built?" },
-    { href: "/about", label: "More about myself" },
-    { href: "/resume", label: "My Latest Resume" },
-    { href: "/contact", label: "Contact Me" },
-  ];
+  const container = {
+    hidden: { opacity: 1, scale: 0 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: { delayChildren: 0.1, staggerChildren: 0.15 },
+    },
+  };
+
+  const item = {
+    hidden: { y: 20, opacity: 0 },
+    visible: { y: 0, opacity: 1 },
+  };
+
 
   return (
     <>
@@ -58,75 +67,177 @@ export default function Home() {
       <div
         className="container"
         style={{
-          display: "flex",
-          alignItems: "center",
-          gap: "3rem",
-          minHeight: "80vh",
+          // display: "flex",
+          // alignItems: "center",
+          // gap: "3rem",
+          // minHeight: "80vh",
         }}
       >
         <div className="hero">
-          <Lottie animationData={animationData} loop={true} autoplay={true} />
 
           <div className="hero__info" style={{ flex: 1 }}>
             <motion.div
-              className="hero__text"
+              className="hero__head"
               initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1, ease: "anticipate" }}
             >
-              Hey there, I&apos;m <h1>Dilip Kumar</h1>, a dedicated{" "}
-              <h2>web developer</h2> with a passion to{" "}
-              <h3>empower your business</h3> in the digital world. I specialize
-              in developing websites that elevate online presence.
+              Hi, I&apos;m <h1>Dilip Kumar</h1>,
             </motion.div>
-
-            <motion.p
+            <motion.div
               className="hero__text"
               initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 1, delay: 0.225, ease: "anticipate" }}
+              transition={{ duration: 1.2, ease: "anticipate" }}
             >
-              Feel free to reach out to me if you would like to discuss new
-              opportunities or projects
-            </motion.p>
+              a passionate web developer based in Delhi, specializing in responsive website design and custom web development. I create user-friendly, SEO-optimized websites using modern technologies like Next.js, React, PHP, and WordPress.
+            </motion.div>
 
             <motion.div
+              className="hero__text"
               initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 1, delay: 0.25, ease: "anticipate" }}
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                gap: "0.75rem",
-                marginTop: "1rem",
-              }}
-              className="hero__links"
+              transition={{ duration: 1.3, ease: "anticipate" }}
             >
-              {links.map((link, index) => (
-                <motion.div
-                  key={link.href}
-                >
-                  <Link  
-                  href={link.href}
-                  rel="noopener noreferrer"
-                  style={{ color: "inherit", textDecoration: "underline" }}
-                  initial={{ opacity: 0, scale: 0.5 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{
-                    duration: 1,
-                    delay: 0.25 + index * 0.15,
-                    ease: "anticipate",
-                  }}
-
-                  title={link.label}
-                  >  {link.label}</Link>
-                 
-                </motion.div>
-              ))}
+              Beyond coding, I stay updated with the latest web development trends, SEO best practices, and innovative design techniques to deliver impactful solutions.
             </motion.div>
           </div>
         </div>
+         <div className="projects">
+          <motion.h2
+            className="projects-heading"
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1, ease: "anticipate" }}
+          >
+            Key Projects
+          </motion.h2>
+
+          <div class="project-cards-grid" style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit, minmax(300px, 3fr))",
+            gap: "2rem",
+
+          }}
+            variants={container}
+            initial="hidden"
+            animate="visible"
+          >
+            <div className="project-card" style={{
+              display: "flex",
+              flexDirection: "column",
+              borderRadius: "12px",
+              background: "#131313",
+              boxShadow: "0 4px 32px 0 rgb(0 0 0 / 6%)",
+              overflow: "hidden",
+              minHeight: 420,
+              border: "1px solid #222",
+            }}>
+              <div style={{ width: "100%", height: "180px", overflow: "hidden" }}>
+                <div style={{ position: "relative", width: "100%", paddingBottom: "56.4%" }}>
+
+                  <Image
+                    src={"https://cdn.cosmicjs.com/0960a860-6eb9-11f0-9635-17c84764a8f2-www-discipleshipcentre-org-in_.png"}
+                    alt="Shalom Packers & Movers"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 387px"
+                    style={{ objectFit: "cover" }}
+                    priority
+                  />
+                </div>
+              </div>
+              <div style={{ padding: "1.5rem", flexGrow: 1, display: "flex", flexDirection: "column" }}>
+                <h3 style={{ fontSize: "1.4rem", fontWeight: 600, marginBottom: "1rem" }}>Discipleship Centre
+                </h3>
+                <p style={{ color: "rgb(187, 187, 187)", fontSize: "1rem", flexGrow: 1, marginBottom: "1.5rem" }}>
+                  Discipleship Centre (DC) is a registered nonprofit organization working toward the sustainable devel...
+                </p>
+                <a href="work/discipleship-centre" className="btn btn--secondary" style={{ alignSelf: "flex-start", lineHeight: 1.6 }}>
+                  View Project
+                </a>
+              </div>
+            </div>
+            <div className="project-card" style={{
+              display: "flex",
+              flexDirection: "column",
+              borderRadius: "12px",
+              background: "#131313",
+              boxShadow: "0 4px 32px 0 rgb(0 0 0 / 6%)",
+              overflow: "hidden",
+              minHeight: 420,
+              border: "1px solid #222",
+            }}>
+              <div style={{ width: "100%", height: "180px", overflow: "hidden" }}>
+                <div style={{ position: "relative", width: "100%", paddingBottom: "56.4%" }}>
+
+                  <Image
+                    src={"https://cdn.cosmicjs.com/8df5f630-6eb8-11f0-9c1f-63444cd7c64f-sidharth-design_.png"}
+                    alt="Sidharth Design"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 387px"
+                    style={{ objectFit: "cover" }}
+                    priority
+                  />
+                </div>
+              </div>
+              <div style={{ padding: "1.5rem", flexGrow: 1, display: "flex", flexDirection: "column" }}>
+                <h3 style={{ fontSize: "1.4rem", fontWeight: 600, marginBottom: "1rem" }}>Sidharth Design</h3>
+                <p style={{ color: "rgb(187, 187, 187)", fontSize: "1rem", flexGrow: 1, marginBottom: "1.5rem" }}>
+                  An independent brand designer on a mission to craft brands that pop! I'm all about teaming up to cre...
+                </p>
+                <a href="work/sidharth-design" className="btn btn--secondary" style={{ alignSelf: "flex-start", lineHeight: 1.6 }}>
+                  View Project
+                </a>
+              </div>
+            </div>
+            <div className="project-card" style={{
+              display: "flex",
+              flexDirection: "column",
+              borderRadius: "12px",
+              background: "#131313",
+              boxShadow: "0 4px 32px 0 rgb(0 0 0 / 6%)",
+              overflow: "hidden",
+              minHeight: 420,
+              border: "1px solid #222",
+            }}>
+              <div style={{ width: "100%", height: "180px", overflow: "hidden" }}>
+                <div style={{ position: "relative", width: "100%", paddingBottom: "56.4%" }}>
+
+                  <Image
+                    src={"https://cdn.cosmicjs.com/a591f080-6df7-11f0-8a01-b925a63a09d6-mpaa-ac-uk_.png"}
+                    alt="MPAA Academy"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 387px"
+                    style={{ objectFit: "cover" }}
+                    priority
+                  />
+                </div>
+              </div>
+              <div style={{ padding: "1.5rem", flexGrow: 1, display: "flex", flexDirection: "column" }}>
+                <h3 style={{ fontSize: "1.4rem", fontWeight: 600, marginBottom: "1rem" }}>MPAA Academy
+                </h3>
+                <p style={{ color: "rgb(187, 187, 187)", fontSize: "1rem", flexGrow: 1, marginBottom: "1.5rem" }}>
+                  MPAA is an independent Higher and Further Education Academy for the Performing Arts.
+                </p>
+                <a href="work/mpaa-academy" className="btn btn--secondary" style={{ alignSelf: "flex-start", lineHeight: 1.6 }}>
+                  View Project
+                </a>
+              </div>
+            </div>
+
+
+          </div>
+
+
+      <div className="block" style={{display:"block", margin:"0 auto", marginBottom:"60px"}}>
+              <a href="/work" className="btn btn--primary" >
+            View More Project</a>
       </div>
+       
+      </div>
+      </div>
+
+     
     </>
   );
 }
