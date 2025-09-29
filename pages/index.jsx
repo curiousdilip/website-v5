@@ -261,13 +261,14 @@ export default function Home() {
               <div style={{ width: "100%", height: "180px", overflow: "hidden" }}>
                 <div style={{ position: "relative", width: "100%", paddingBottom: "56.4%" }}>
 
+
                   <Image
-                    src={"https://cdn.cosmicjs.com/0960a860-6eb9-11f0-9635-17c84764a8f2-www-discipleshipcentre-org-in_.png"}
-                    alt="Shalom Packers & Movers"
-                    fill
-                    sizes="(max-width: 768px) 100vw, 387px"
-                    style={{ objectFit: "cover" }}
+                    src="https://cdn.cosmicjs.com/0960a860-6eb9-11f0-9635-17c84764a8f2-www-discipleshipcentre-org-in_.png"
+                    alt="Discipleship Centre"
+                    width={387}
+                    height={258}
                     priority
+                    style={{ width: '100%', height: 'auto', objectFit: 'cover' }}
                   />
                 </div>
               </div>
@@ -294,14 +295,13 @@ export default function Home() {
             }}>
               <div style={{ width: "100%", height: "180px", overflow: "hidden" }}>
                 <div style={{ position: "relative", width: "100%", paddingBottom: "56.4%" }}>
-
                   <Image
-                    src={"https://cdn.cosmicjs.com/8df5f630-6eb8-11f0-9c1f-63444cd7c64f-sidharth-design_.png"}
+                    src="https://cdn.cosmicjs.com/8df5f630-6eb8-11f0-9c1f-63444cd7c64f-sidharth-design_.png"
                     alt="Sidharth Design"
-                    fill
-                    sizes="(max-width: 768px) 100vw, 387px"
-                    style={{ objectFit: "cover" }}
+                    width={387}
+                    height={258}
                     priority
+                    style={{ width: '100%', height: 'auto', objectFit: 'cover' }}
                   />
                 </div>
               </div>
@@ -327,14 +327,13 @@ export default function Home() {
             }}>
               <div style={{ width: "100%", height: "180px", overflow: "hidden" }}>
                 <div style={{ position: "relative", width: "100%", paddingBottom: "56.4%" }}>
-
                   <Image
-                    src={"https://cdn.cosmicjs.com/a591f080-6df7-11f0-8a01-b925a63a09d6-mpaa-ac-uk_.png"}
+                    src="https://cdn.cosmicjs.com/a591f080-6df7-11f0-8a01-b925a63a09d6-mpaa-ac-uk_.png"
                     alt="MPAA Academy"
-                    fill
-                    sizes="(max-width: 768px) 100vw, 387px"
-                    style={{ objectFit: "cover" }}
+                    width={387}
+                    height={258}
                     priority
+                    style={{ width: '100%', height: 'auto', objectFit: 'cover' }}
                   />
                 </div>
               </div>
