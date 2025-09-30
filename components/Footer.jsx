@@ -57,7 +57,7 @@ export default function Footer() {
                     },
                   ].map((item) => (
                     <motion.li key={item.href} variants={footerItemVariants}>
-                      <a href={item.href} target="_blank"rel={item.rel}aria-label={item.label} title={item.label}>
+                      <a href={item.href} target="_blank" rel={item.rel} aria-label={item.label} title={item.label}>
                         <i className={item.icon}></i>
                       </a>
                     </motion.li>
@@ -74,7 +74,7 @@ export default function Footer() {
                     { text: "Projects", href: "/work" },
                     { text: "About", href: "/about" },
                     { text: "Contact", href: "/contact" },
-                    { text: "Resume", href: "/resume" },
+                    { text: "Resume", href: "/resume.pdf", external: true, },
                   ],
                 },
                 {
@@ -87,11 +87,12 @@ export default function Footer() {
                       rel: "me noopener noreferrer",
 
                     },
-                    { text: "Sitemap", href: "/sitemap.xml",
-                    external: true,
+                    {
+                      text: "Sitemap", href: "/sitemap.xml",
+                      external: true,
 
-                     },
-                    
+                    },
+
                   ],
                 },
                 {
@@ -101,7 +102,7 @@ export default function Footer() {
                       text: "Frontend Mentor",
                       href: "https://www.frontendmentor.io/profile/curiousdilip",
                       external: true,
-                      rel:"me noopener noreferrer"
+                      rel: "me noopener noreferrer"
                     },
                     {
                       text: "Codepen",
@@ -117,7 +118,7 @@ export default function Footer() {
                   <ul>
                     {col.links.map((lnk) => (
                       <li key={lnk.href}>
-                        <Link href={lnk.href} target={lnk.external ? "_blank" : undefined}   rel={lnk.rel || (lnk.external ? "noopener noreferrer" : undefined)} title={lnk.text}>
+                        <Link href={lnk.href} target={lnk.external ? "_blank" : undefined} rel={lnk.rel || (lnk.external ? "noopener noreferrer" : undefined)} title={lnk.text}>
                           {lnk.text}
                         </Link>
                       </li>
