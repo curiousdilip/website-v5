@@ -35,20 +35,7 @@ export default function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="google-site-verification" content="soBSvXZTtbZB3TKHu92b_RAUy6KcQtKKuaf7GcFW1oE" />
       </Head>
-      <Script
-        src="https://www.googletagmanager.com/gtag/js?id=G-W78VYNSQ67"
-        strategy="afterInteractive"
-      />
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-W78VYNSQ67');
-        `}
-      </Script>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
