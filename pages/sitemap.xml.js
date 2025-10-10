@@ -6,7 +6,7 @@ export async function getServerSideProps({ res }) {
   const baseUrl = 'https://dilipmaurya.in';
 
 
-  const staticRoutes = ['', '/about', '/contact', '/work', '/resume'];
+  const staticRoutes = ['', '/about', '/contact', '/work'];
 
 
   const projectUrl = 'https://api.cosmicjs.com/v3/buckets/my-website-website/objects?pretty=true&query=%7B%22type%22:%22works%22%7D&limit=100&skip=0&read_key=n3jLniptSDz6sl6YWVXuEict2MsOxs3jN3sxxFOBg2vY8d0NIE&depth=1&props=slug,title,metadata,type';
@@ -24,15 +24,15 @@ export async function getServerSideProps({ res }) {
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   ${allRoutes
-    .map(
-      (route) => `<url>
+      .map(
+        (route) => `<url>
   <loc>${baseUrl}${route}</loc>
   <lastmod>${new Date().toISOString()}</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.8</priority>
 </url>`
-    )
-    .join('\n')}
+      )
+      .join('\n')}
 </urlset>`;
 
   res.setHeader('Content-Type', 'text/xml');
