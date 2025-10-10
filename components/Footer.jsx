@@ -131,7 +131,7 @@ export default function Footer() {
 
           <motion.div className="copyright" variants={footerItemVariants}>
             <p>&copy; {new Date().getFullYear()} Dilip Kumar. All rights reserved. </p>
-            <p>Last updated by Dilip on 7 August, 2025 at 11:27 AM UTC +5:30</p>
+            <p>Last updated by Dilip on 11 October, 2025 at 2:32 AM UTC +5:30</p>
           </motion.div>
         </div>
       </motion.footer>
