@@ -213,9 +213,9 @@ export default function Work() {
                     >
                       {project.metadata?.description
                         ? project.metadata.description.slice(0, 100) +
-                          (project.metadata.description.length > 100
-                            ? "..."
-                            : "")
+                        (project.metadata.description.length > 100
+                          ? "..."
+                          : "")
                         : "No description available."}
                     </p>
                     <h3>

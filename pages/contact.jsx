@@ -24,6 +24,10 @@ export default function Contact() {
       );
       if (!response.ok) throw new Error("Failed to fetch weather data");
       const data = await response.json();
+      return {
+        props: { weatherData: data },
+        revalidate: 3600,
+      };
 
       setCity(data.name);
       setCountry(data.sys.country);
