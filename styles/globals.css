@@ -564,17 +564,17 @@ h4 {
 
 .hero__head {
   max-width: 100%;
-  /* margin: 0 auto; */
   text-align: center;
   font-weight: 300;
-  font-size: 52px;
+
   line-height: 1;
   margin-bottom: 16px;
 }
 
 .hero__head h1 {
   display: inline;
-
+  font-size: 48px;
+  text-transform: capitalize;
 }
 
 .hero__text {
@@ -585,17 +585,78 @@ h4 {
   margin-bottom: 16px;
 }
 
-
-.hero__text h2,
-.hero__text h3 {
-  font-size: var(--fs-body) !important;
-  display: inline;
-  font-weight: 300;
-  text-transform: lowercase;
+.hero__text h2 {
+  margin: 30px auto;
+  font-size: 30px;
 }
 
-.hero__text h1 {
-  text-transform: capitalize;
+
+.review-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem
+}
+
+.review-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+  max-width: 600px;
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.author-img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: .4rem;
+}
+
+.author-name {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #333;
+
+}
+
+.rating {
+  color: #ffb400;
+  margin-left: auto;
+  font-size: 1rem;
+}
+
+.review-text {
+  font-size: 13px;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.review-date {
+  font-size: 0.8rem;
+  color: #777;
+  text-align: right;
+}
+
+.ctbox {
+  text-align: center;
+  border-radius: 12px;
+  background: #131313;
+  box-shadow: 0 4px 32px 0 rgb(0 0 0 / 6%);
+  overflow: hidden;
+  border: 1px solid #222;
+  padding: 1.5rem;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  width: 60%;
+
 }
 
 @media (max-width: 768px) {
@@ -606,6 +667,21 @@ h4 {
   .hero__text {
     max-width: 100%;
   }
+
+  .ctbox {
+    width: 100%;
+  }
+
+  .review-cards-grid {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 0;
+  }
+
+  .review-text {
+    font-size: 1rem;
+  }
+
 
 }
 
@@ -928,7 +1004,7 @@ h4 {
 
 .service-cards-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
+  grid-template-columns: repeat(5, 1fr);
   gap: 2rem
 }
 
@@ -949,8 +1025,8 @@ h4 {
 }
 
 .service-card .icon i {
-  font-size: 50px;
-  padding: 5px 20px;
+  font-size: 20px;
+  padding: 4px 10px;
   border: 1px solid white;
   border-radius: 50%;
   display: inline-block;
@@ -965,7 +1041,7 @@ h4 {
 }
 
 .service-card .service-detail h3 {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 1rem;
 }
@@ -973,6 +1049,7 @@ h4 {
 .service-card .service-detail p {
   /* color: rgb(187, 187, 187); */
   font-size: 1rem;
+  font-weight: 400;
   flex-grow: 1;
 }
 
@@ -999,10 +1076,13 @@ h4 {
   color: var(--clr-neutral-100);
 }
 
-@media (min-width: 768px) {
-  .projects {
-    /* margin-top: 80px; */
-    /* gap: 60px; */
+@media (max-width: 768px) {
+
+
+  .service-cards-grid {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 2rem
   }
 }
 
