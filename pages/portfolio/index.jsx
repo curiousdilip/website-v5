@@ -75,43 +75,55 @@ export default function Work() {
   return (
     <>
       <Head>
-        <title>Portfolio | Dilip Kumar </title>
+        <title>Portfolio of Web Development Projects | Dilip Kumar</title>
         <meta
           name="description"
-          content="Explore the portfolio of Dilip Kumar, featuring a collection of modern, responsive web development projects."
+          content="Explore a curated portfolio of web development projects by Dilip Kumar. Innovative, responsive, and user-friendly websites ready to elevate your business."
         />
         <meta
           name="keywords"
-          content="Dilip Kumar , portfolio, projects, web developer, work samples, case studies"
+          content="Dilip Kumar , portfolio, portfolio of web development projects, web developer, work samples, user-friendly websites"
         />
         <meta name="author" content="Dilip Kumar Maurya" />
         <meta name="publisher" content="Dilip Kumar Maurya" />
         <meta name="robots" content="index, follow" />
         <meta httpEquiv="Content-Language" content="en" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.dilipmaurya.in/work" />
-        <meta property="og:title" content="Portfolio | Dilip Kumar " />
+        <meta
+          property="og:url"
+          content="https://www.dilipmaurya.in/portfolio"
+        />
+        <meta
+          property="og:title"
+          content="Portfolio of Web Development Projects | Dilip Kumar"
+        />
         <meta
           property="og:description"
-          content="Explore the portfolio of Dilip Kumar, featuring a collection of modern, responsive web development projects."
+          content="Explore a curated portfolio of web development projects by Dilip Kumar. Innovative, responsive, and user-friendly websites ready to elevate your business."
         />
         <meta
           property="og:image"
           content="https://www.dilipmaurya.in/og-image.jpg"
         />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:url" content="https://www.dilipmaurya.in/work" />
-        <meta name="twitter:title" content="Portfolio | Dilip Kumar " />
+        <meta
+          name="twitter:url"
+          content="https://www.dilipmaurya.in/portfolio"
+        />
+        <meta
+          name="twitter:title"
+          content="Portfolio of Web Development Projects | Dilip Kumar"
+        />
         <meta
           name="twitter:description"
-          content="Explore the portfolio of Dilip Kumar, featuring a collection of modern, responsive web development projects."
+          content="Explore a curated portfolio of web development projects by Dilip Kumar. Innovative, responsive, and user-friendly websites ready to elevate your business."
         />
         <meta
           name="twitter:image"
           content="https://www.dilipmaurya.in/og-image.jpg"
         />
 
-        <link rel="canonical" href="https://www.dilipmaurya.in/work" />
+        <link rel="canonical" href="https://www.dilipmaurya.in/portfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -123,8 +135,29 @@ export default function Work() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, ease: "anticipate" }}
           >
-            Crafting Digital Solutions
+            Making digital solutions
           </motion.h1>
+
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1, ease: "anticipate" }}
+            className="side-by-side__content"
+            variants={item}
+          >
+            <p className="side-by-side__paragraph ">
+              Check out a variety of projects that show off my skills in web
+              development, UI/UX design, and making custom digital solutions.
+              From websites for big companies to new businesses, each project
+              shows how much I care about making experiences that are responsive
+              and easy to use that help businesses grow.
+            </p>
+            <p className="side-by-side__paragraph">
+              This portfolio shows that I can deliver high-quality solutions
+              that are tailored to the needs of my clients, whether you want to
+              be inspired or work together.
+            </p>
+          </motion.div>
 
           {isLoading && <p>Loading... Please wait</p>}
           {error && <p>Something went wrong... Please try again later</p>}
@@ -213,15 +246,15 @@ export default function Work() {
                     >
                       {project.metadata?.description
                         ? project.metadata.description.slice(0, 100) +
-                        (project.metadata.description.length > 100
-                          ? "..."
-                          : "")
+                          (project.metadata.description.length > 100
+                            ? "..."
+                            : "")
                         : "No description available."}
                     </p>
                     <h3>
                       <Link
                         title={`Know more about  ${project.title}`}
-                        href={`/work/${project.slug}`}
+                        href={`/portfolio/${project.slug}`}
                         className="btn btn--secondary"
                         style={{
                           alignSelf: "flex-start",
