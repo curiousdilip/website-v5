@@ -22,11 +22,13 @@ export default function Home() {
     visible: { y: 0, opacity: 1 },
   };
 
-
   return (
     <>
       <Head>
-        <title>Dilip Kumar | Web Developer in Delhi | Custom React & WordPress Development</title>
+        <title>
+          Dilip Kumar | Web Developer in Delhi | Custom React & WordPress
+          Development
+        </title>
         <meta
           name="description"
           content="Expert web developer in Delhi specializing in responsive website design, custom web development, React, PHP & WordPress. SEO-optimized solutions for businesses."
@@ -34,7 +36,10 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.dilipmaurya.in/" />
-        <meta property="og:title" content="Dilip Kumar | Web Developer in Delhi | Custom React & WordPress Development" />
+        <meta
+          property="og:title"
+          content="Dilip Kumar | Web Developer in Delhi | Custom React & WordPress Development"
+        />
         <meta
           property="og:description"
           content="Expert web developer in Delhi specializing in responsive website design, custom web development, React, PHP & WordPress. SEO-optimized solutions for businesses."
@@ -45,7 +50,10 @@ export default function Home() {
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:url" content="https://www.dilipmaurya.in/" />
-        <meta name="twitter:title" content="Dilip Kumar | Web Developer in Delhi | Custom React & WordPress Development" />
+        <meta
+          name="twitter:title"
+          content="Dilip Kumar | Web Developer in Delhi | Custom React & WordPress Development"
+        />
         <meta
           name="twitter:description"
           content="Expert web developer in Delhi specializing in responsive website design, custom web development, React, PHP & WordPress. SEO-optimized solutions for businesses."
@@ -66,11 +74,8 @@ export default function Home() {
         />
       </Head>
 
-      <div
-        className="container"
-      >
+      <div className="container">
         <div className="hero">
-
           <div className="hero__info" style={{ flex: 1 }}>
             <motion.div
               className="hero__head"
@@ -78,9 +83,7 @@ export default function Home() {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1, ease: "anticipate" }}
             >
-
               <h1> Hi, I'm Dilip Kumar – Web Developer in Delhi</h1>
-
             </motion.div>
 
             <motion.div
@@ -97,10 +100,12 @@ export default function Home() {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1.3, ease: "anticipate" }}
             >
-              I am a freelance web developer based in Delhi, specializing in responsive website design, custom web development, and SEO-optimized solutions. With expertise in Next.js, React, PHP, and WordPress, I help businesses in Delhi and beyond build high-performing, secure, and user-friendly websites.
+              I am a freelance web developer based in Delhi, specializing in
+              responsive website design, custom web development, and
+              SEO-optimized solutions. With expertise in Next.js, React, PHP,
+              and WordPress, I help businesses in Delhi and beyond build
+              high-performing, secure, and user-friendly websites.
             </motion.div>
-
-
           </div>
         </div>
         <motion.div
@@ -120,7 +125,9 @@ export default function Home() {
               </div>
               <div className="service-detail">
                 <h3>Web Development Services</h3>
-                <p>Custom websites, web applications, and e-commerce solutions.</p>
+                <p>
+                  Custom websites, web applications, and e-commerce solutions.
+                </p>
               </div>
             </motion.div>
 
@@ -130,8 +137,7 @@ export default function Home() {
               </div>
               <div className="service-detail">
                 <h3>WordPress Development</h3>
-                <p>Custom themes, plugins, and site optimization.
-                </p>
+                <p>Custom themes, plugins, and site optimization.</p>
               </div>
             </motion.div>
 
@@ -141,8 +147,7 @@ export default function Home() {
               </div>
               <div className="service-detail">
                 <h3>React & PHP Development</h3>
-                <p>Modern, scalable web apps.
-                </p>
+                <p>Modern, scalable web apps.</p>
               </div>
             </motion.div>
             <motion.div className="service-card" variants={item}>
@@ -151,7 +156,9 @@ export default function Home() {
               </div>
               <div className="service-detail">
                 <h3>Analytics & SEO</h3>
-                <p>Performance tracking, SEO audits, and on-page optimization.</p>
+                <p>
+                  Performance tracking, SEO audits, and on-page optimization.
+                </p>
               </div>
             </motion.div>
             <motion.div className="service-card" variants={item}>
@@ -160,8 +167,7 @@ export default function Home() {
               </div>
               <div className="service-detail">
                 <h3>Web Security</h3>
-                <p> Secure coding, vulnerability assessments.
-                </p>
+                <p> Secure coding, vulnerability assessments.</p>
               </div>
             </motion.div>
           </div>
@@ -198,24 +204,63 @@ export default function Home() {
                 border: "1px solid #222",
               }}
             >
-              <div style={{ width: "100%", height: "180px", overflow: "hidden" }}>
-                <div style={{ position: "relative", width: "100%", paddingBottom: "56.4%" }}>
+              <div
+                style={{ width: "100%", height: "180px", overflow: "hidden" }}
+              >
+                <div
+                  style={{
+                    position: "relative",
+                    width: "100%",
+                    paddingBottom: "56.4%",
+                  }}
+                >
                   <Image
                     src="https://cdn.cosmicjs.com/0960a860-6eb9-11f0-9635-17c84764a8f2-www-discipleshipcentre-org-in_.png"
                     alt="Discipleship Centre"
                     width={387}
                     height={258}
                     priority
-                    style={{ width: '100%', height: 'auto', objectFit: 'cover' }}
+                    style={{
+                      width: "100%",
+                      height: "auto",
+                      objectFit: "cover",
+                    }}
                   />
                 </div>
               </div>
-              <div style={{ padding: "1.5rem", flexGrow: 1, display: "flex", flexDirection: "column" }}>
-                <h3 style={{ fontSize: "1.4rem", fontWeight: 600, marginBottom: "1rem" }}>Discipleship Centre</h3>
-                <p style={{ color: "rgb(187, 187, 187)", fontSize: "1rem", flexGrow: 1, marginBottom: "1.5rem" }}>
-                  Discipleship Centre (DC) is a registered nonprofit organization working toward the sustainable devel...
+              <div
+                style={{
+                  padding: "1.5rem",
+                  flexGrow: 1,
+                  display: "flex",
+                  flexDirection: "column",
+                }}
+              >
+                <h3
+                  style={{
+                    fontSize: "1.4rem",
+                    fontWeight: 600,
+                    marginBottom: "1rem",
+                  }}
+                >
+                  Discipleship Centre
+                </h3>
+                <p
+                  style={{
+                    color: "rgb(187, 187, 187)",
+                    fontSize: "1rem",
+                    flexGrow: 1,
+                    marginBottom: "1.5rem",
+                  }}
+                >
+                  Discipleship Centre (DC) is a registered nonprofit
+                  organization working toward the sustainable devel...
                 </p>
-                <a href="work/discipleship-centre" className="btn btn--secondary" style={{ alignSelf: "flex-start", lineHeight: 1.6 }}>
+                <a
+                  href="work/discipleship-centre"
+                  className="btn btn--secondary"
+                  style={{ alignSelf: "flex-start", lineHeight: 1.6 }}
+                >
                   View Project
                 </a>
               </div>
@@ -235,24 +280,63 @@ export default function Home() {
                 border: "1px solid #222",
               }}
             >
-              <div style={{ width: "100%", height: "180px", overflow: "hidden" }}>
-                <div style={{ position: "relative", width: "100%", paddingBottom: "56.4%" }}>
+              <div
+                style={{ width: "100%", height: "180px", overflow: "hidden" }}
+              >
+                <div
+                  style={{
+                    position: "relative",
+                    width: "100%",
+                    paddingBottom: "56.4%",
+                  }}
+                >
                   <Image
                     src="https://cdn.cosmicjs.com/8df5f630-6eb8-11f0-9c1f-63444cd7c64f-sidharth-design_.png"
                     alt="Sidharth Design"
                     width={387}
                     height={258}
                     priority
-                    style={{ width: '100%', height: 'auto', objectFit: 'cover' }}
+                    style={{
+                      width: "100%",
+                      height: "auto",
+                      objectFit: "cover",
+                    }}
                   />
                 </div>
               </div>
-              <div style={{ padding: "1.5rem", flexGrow: 1, display: "flex", flexDirection: "column" }}>
-                <h3 style={{ fontSize: "1.4rem", fontWeight: 600, marginBottom: "1rem" }}>Sidharth Design</h3>
-                <p style={{ color: "rgb(187, 187, 187)", fontSize: "1rem", flexGrow: 1, marginBottom: "1.5rem" }}>
-                  An independent brand designer on a mission to craft brands that pop! I'm all about teaming up to cre...
+              <div
+                style={{
+                  padding: "1.5rem",
+                  flexGrow: 1,
+                  display: "flex",
+                  flexDirection: "column",
+                }}
+              >
+                <h3
+                  style={{
+                    fontSize: "1.4rem",
+                    fontWeight: 600,
+                    marginBottom: "1rem",
+                  }}
+                >
+                  Sidharth Design
+                </h3>
+                <p
+                  style={{
+                    color: "rgb(187, 187, 187)",
+                    fontSize: "1rem",
+                    flexGrow: 1,
+                    marginBottom: "1.5rem",
+                  }}
+                >
+                  An independent brand designer on a mission to craft brands
+                  that pop! I'm all about teaming up to cre...
                 </p>
-                <a href="work/sidharth-design" className="btn btn--secondary" style={{ alignSelf: "flex-start", lineHeight: 1.6 }}>
+                <a
+                  href="work/sidharth-design"
+                  className="btn btn--secondary"
+                  style={{ alignSelf: "flex-start", lineHeight: 1.6 }}
+                >
                   View Project
                 </a>
               </div>
@@ -272,31 +356,73 @@ export default function Home() {
                 border: "1px solid #222",
               }}
             >
-              <div style={{ width: "100%", height: "180px", overflow: "hidden" }}>
-                <div style={{ position: "relative", width: "100%", paddingBottom: "56.4%" }}>
+              <div
+                style={{ width: "100%", height: "180px", overflow: "hidden" }}
+              >
+                <div
+                  style={{
+                    position: "relative",
+                    width: "100%",
+                    paddingBottom: "56.4%",
+                  }}
+                >
                   <Image
                     src="https://cdn.cosmicjs.com/a591f080-6df7-11f0-8a01-b925a63a09d6-mpaa-ac-uk_.png"
                     alt="MPAA Academy"
                     width={387}
                     height={258}
                     priority
-                    style={{ width: '100%', height: 'auto', objectFit: 'cover' }}
+                    style={{
+                      width: "100%",
+                      height: "auto",
+                      objectFit: "cover",
+                    }}
                   />
                 </div>
               </div>
-              <div style={{ padding: "1.5rem", flexGrow: 1, display: "flex", flexDirection: "column" }}>
-                <h3 style={{ fontSize: "1.4rem", fontWeight: 600, marginBottom: "1rem" }}>MPAA Academy</h3>
-                <p style={{ color: "rgb(187, 187, 187)", fontSize: "1rem", flexGrow: 1, marginBottom: "1.5rem" }}>
-                  MPAA is an independent Higher and Further Education Academy for the Performing Arts.
+              <div
+                style={{
+                  padding: "1.5rem",
+                  flexGrow: 1,
+                  display: "flex",
+                  flexDirection: "column",
+                }}
+              >
+                <h3
+                  style={{
+                    fontSize: "1.4rem",
+                    fontWeight: 600,
+                    marginBottom: "1rem",
+                  }}
+                >
+                  MPAA Academy
+                </h3>
+                <p
+                  style={{
+                    color: "rgb(187, 187, 187)",
+                    fontSize: "1rem",
+                    flexGrow: 1,
+                    marginBottom: "1.5rem",
+                  }}
+                >
+                  MPAA is an independent Higher and Further Education Academy
+                  for the Performing Arts.
                 </p>
-                <a href="work/mpaa-academy" className="btn btn--secondary" style={{ alignSelf: "flex-start", lineHeight: 1.6 }}>
+                <a
+                  href="work/mpaa-academy"
+                  className="btn btn--secondary"
+                  style={{ alignSelf: "flex-start", lineHeight: 1.6 }}
+                >
                   View Project
                 </a>
               </div>
             </motion.div>
           </div>
 
-          <div className="block" style={{ display: "block", margin: "0 auto", marginBottom: "60px" }}>
+          <div
+            className="block"
+            style={{ display: "block", margin: "0 auto", marginBottom: "60px" }}
+          >
             <a href="/work" className="btn btn--primary">
               View More Project
             </a>
@@ -316,7 +442,6 @@ export default function Home() {
           <div className="review-cards-grid">
             <div class="review-card">
               <div class="review-header">
-
                 <Image
                   src={michael}
                   alt="Michael Sam"
@@ -329,7 +454,8 @@ export default function Home() {
                 <div class="rating">★★★★★</div>
               </div>
               <div class="review-text">
-                Dilip Kumar did an amazing job on my landing page. He finished everything in just one week, and the page  ...
+                Dilip Kumar did an amazing job on my landing page. He finished
+                everything in just one week, and the page ...
               </div>
               <div class="review-date">September 22, 2025</div>
             </div>
@@ -347,7 +473,8 @@ export default function Home() {
                 <div class="rating">★★★★★</div>
               </div>
               <div class="review-text">
-                Working with Dilip was an excellent experience. He was fast, efficient, and delivered a website that exce ...
+                Working with Dilip was an excellent experience. He was fast,
+                efficient, and delivered a website that exce ...
               </div>
               <div class="review-date">August 23, 2025</div>
             </div>
@@ -365,7 +492,8 @@ export default function Home() {
                 <div class="rating">★★★★★</div>
               </div>
               <div class="review-text">
-                Dilip is a talented developer with a knack of developing exactly what the client wants. I worked with Dil ...
+                Dilip is a talented developer with a knack of developing exactly
+                what the client wants. I worked with Dil ...
               </div>
               <div class="review-date">July 30, 2025</div>
             </div>
@@ -383,17 +511,26 @@ export default function Home() {
                 <div class="rating">★★★★★</div>
               </div>
               <div class="review-text">
-                Excellent professionalism, well coordinated, delivered in time, rightly charged, a dedicated coder, stron ...
+                Excellent professionalism, well coordinated, delivered in time,
+                rightly charged, a dedicated coder, stron ...
               </div>
               <div class="review-date">November 7, 2024</div>
             </div>
           </div>
 
-          <div className="block" style={{ display: "block", margin: "0 auto", marginBottom: "60px" }}>
-            <Link href="https://www.google.com/search?q=Dilip+Kumar+%7C+Web+Developer%E2%80%A6#lrd=0x390d1b0024a3520b:0x7cca2b1632be5ac7,1," target="_blank" className="btn btn--primary">Read More Reviews</Link>
+          <div
+            className="block"
+            style={{ display: "block", margin: "0 auto", marginBottom: "60px" }}
+          >
+            <Link
+              href="https://www.google.com/search?q=Dilip+Kumar+%7C+Web+Developer%E2%80%A6#lrd=0x390d1b0024a3520b:0x7cca2b1632be5ac7,1,"
+              target="_blank"
+              className="btn btn--primary"
+            >
+              Read More Reviews
+            </Link>
           </div>
         </motion.div>
-
 
         <motion.div
           className="ctbox-home"
@@ -401,20 +538,21 @@ export default function Home() {
           initial="hidden"
           animate="visible"
         >
-
-
           <div className="ctbox ">
-            <p>Ready to grow your business online?  </p>
+            <p>Ready to grow your business online? </p>
             <p>for a free consultation.</p>
-            <div className="block" style={{ display: "block", margin: "0 auto", marginTop: "20px" }}>
-              <Link href="/contact" className="btn btn--primary"> Contact me</Link>
+            <div
+              className="block"
+              style={{ display: "block", margin: "0 auto", marginTop: "20px" }}
+            >
+              <Link href="/contact" className="btn btn--primary">
+                {" "}
+                Contact me
+              </Link>
             </div>
           </div>
-
         </motion.div>
-      </div >
-
-
+      </div>
     </>
   );
 }

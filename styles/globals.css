@@ -7,7 +7,6 @@
   font-weight: 400 !important;
 }
 
-
 :root {
   --clr-neutral-100: #fff;
   --clr-neutral-600: #808080;
@@ -505,7 +504,7 @@ h4 {
   display: grid;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .err__container {
     padding-block: 0 180px;
   }
@@ -518,7 +517,7 @@ h4 {
   gap: 16px;
 }
 
-.err__btn-wrapper>* {
+.err__btn-wrapper > * {
   width: max-content;
 }
 
@@ -561,7 +560,6 @@ h4 {
   background-color: var(--clr-neutral-100);
 }
 
-
 .hero__head {
   max-width: 100%;
   text-align: center;
@@ -590,11 +588,10 @@ h4 {
   font-size: 30px;
 }
 
-
 .review-cards-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 2rem
+  gap: 2rem;
 }
 
 .review-card {
@@ -617,14 +614,13 @@ h4 {
   height: 32px;
   border-radius: 50%;
   object-fit: cover;
-  margin-right: .4rem;
+  margin-right: 0.4rem;
 }
 
 .author-name {
   font-weight: bold;
   font-size: 1rem;
   color: #333;
-
 }
 
 .rating {
@@ -656,7 +652,6 @@ h4 {
   margin: 0 auto;
   margin-bottom: 60px;
   width: 60%;
-
 }
 
 @media (max-width: 768px) {
@@ -681,8 +676,6 @@ h4 {
   .review-text {
     font-size: 1rem;
   }
-
-
 }
 
 @media (min-width: 992px) {
@@ -705,7 +698,13 @@ h4 {
 }
 
 .about__heading {
+  font-size: 48px;
+  text-transform: capitalize;
   margin-bottom: 40px;
+}
+
+.about__heading:nth-child(2) {
+  font-size: 30px;
 }
 
 .side-by-side {
@@ -732,7 +731,7 @@ h4 {
 
 @media (min-width: 768px) {
   .about__heading {
-    margin-bottom: 80px;
+    /* margin-bottom: 80px; */
     text-align: center;
     text-wrap: balance;
   }
@@ -785,7 +784,8 @@ h4 {
 }
 
 .card__year {
-  color: var(--clr-neutral-700);
+  /* color: var(--clr-neutral-700); */
+  color: #fff;
 }
 
 .card__content {
@@ -961,17 +961,16 @@ h4 {
 .skill-cards-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 2rem
+  gap: 2rem;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .skill-cards-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem
+    gap: 2rem;
   }
 }
-
 
 .skill-card {
   display: grid;
@@ -1005,7 +1004,7 @@ h4 {
 .service-cards-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 2rem
+  gap: 2rem;
 }
 
 .service-card {
@@ -1016,7 +1015,6 @@ h4 {
   overflow: hidden;
   border: 1px solid #222;
   padding: 1.5rem;
-
 }
 
 .service-card .icon {
@@ -1053,8 +1051,6 @@ h4 {
   flex-grow: 1;
 }
 
-
-
 .projects {
   display: flex;
   flex-direction: column;
@@ -1077,12 +1073,10 @@ h4 {
 }
 
 @media (max-width: 768px) {
-
-
   .service-cards-grid {
     display: grid;
     grid-template-columns: auto;
-    gap: 2rem
+    gap: 2rem;
   }
 }
 

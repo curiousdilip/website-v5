@@ -14,23 +14,21 @@ export default function About() {
       transition: { delayChildren: 0.1, staggerChildren: 0.15 },
     },
   };
-
   const item = {
     hidden: { y: 20, opacity: 0 },
     visible: { y: 0, opacity: 1 },
   };
-
   return (
     <>
       <Head>
-        <title>About | Dilip Kumar</title>
+        <title>Dilip Kumar | Web Developer in Delhi</title>
         <meta
           name="description"
-          content="Learn more about Dilip Kumar, a passionate web developer dedicated to creating stylish and responsive websites that meet client needs."
+          content="About Dilip, a web developer from New Delhi, India. Specializing in React, WordPress, and government web projects. Explore my journey, skills, and portfolio."
         />
         <meta
           name="keywords"
-          content="Dilip Kumar, about, web developer, portfolio, personal background"
+          content="Web Developer in India, Freelance Web Developer, web developer, portfolio, WordPress Developer"
         />
         <meta name="author" content="Dilip Kumar Maurya" />
         <meta name="publisher" content="Dilip Kumar Maurya" />
@@ -38,10 +36,13 @@ export default function About() {
         <meta httpEquiv="Content-Language" content="en" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.dilipmaurya.in/about" />
-        <meta property="og:title" content="About | Dilip Kumar " />
+        <meta
+          property="og:title"
+          content="Dilip Kumar | Web Developer in Delhi "
+        />
         <meta
           property="og:description"
-          content="Learn more about Dilip Kumar, a passionate web developer dedicated to creating stylish and responsive websites that meet client needs."
+          content="About Dilip, a web developer from New Delhi, India. Specializing in React, WordPress, and government web projects. Explore my journey, skills, and portfolio."
         />
         <meta
           property="og:image"
@@ -49,10 +50,13 @@ export default function About() {
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:url" content="https://www.dilipmaurya.in/about" />
-        <meta name="twitter:title" content="About | Dilip Kumar" />
+        <meta
+          name="twitter:title"
+          content="Dilip Kumar | Web Developer in Delhi"
+        />
         <meta
           name="twitter:description"
-          content="Learn more about Dilip Kumar, a passionate web developer dedicated to creating stylish and responsive websites that meet client needs."
+          content="About Dilip, a web developer from New Delhi, India. Specializing in React, WordPress, and government web projects. Explore my journey, skills, and portfolio."
         />
         <meta
           name="twitter:image"
@@ -71,8 +75,17 @@ export default function About() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, ease: "anticipate" }}
           >
-            My Journey
+            About Me
           </motion.h1>
+
+          <motion.h2
+            className="about__heading"
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1, ease: "anticipate" }}
+          >
+            My Journey as a Web Developer in New Delhi
+          </motion.h2>
 
           <motion.section
             className="side-by-side"
@@ -81,22 +94,20 @@ export default function About() {
             animate="visible"
           >
             <motion.div className="side-by-side__content" variants={item}>
+              <h3 className="side-by-side__paragraph">
+                Early Passion and Background
+              </h3>
               <p className="side-by-side__paragraph">
-                Coming from New Delhi, India, my journey centers around a
-                passion for technology and continuous self-improvement. I find
-                great satisfaction in solving problems, learning new skills, and
-                pushing myself beyond my comfort zone to achieve growth.
-              </p>
-              <p className="side-by-side__paragraph">
-                Besides coding, I enjoy listening to music, gaming, and reading.
-                I also value sharing knowledge and collaborating with others in
-                the tech community.
+                Coming from New Delhi, India, I am a passionate web developer
+                dedicated to continuous self-improvement and technology. I
+                thrive on solving complex problems, learning new skills, and
+                pushing beyond my comfort zone.
               </p>
             </motion.div>
 
             <Image
               src={portrait.src}
-              alt="Web developer with black coat and blue background"
+              alt="Dilip, Web Developer in New Delhi, India"
               width="0"
               height="0"
               sizes="100vw"
@@ -108,29 +119,35 @@ export default function About() {
           </motion.section>
 
           <section className="career-path">
+            <h3 className="side-by-side__paragraph">Professional Timeline</h3>
+
             <Card
               year="2019"
-              text="Stepped into the world of real-world web development with my very first freelance project for NLP Minerals Pvt. Ltd. This experience not only sharpened my technical skills but also ignited my passion for creating digital solutions."
+              text="First freelance job in 2019: NLP Minerals Pvt. Ltd. Started my career as a freelance web developer in India. Provided a custom web solution, which helped me improve my technical and client communication skills."
             />
             <Card
               year="2021"
-              text="Achieved my first international breakthrough with MPAA, opening doors to global collaboration and new perspectives in problem-solving."
+              text="International Breakthrough – MPAA Performing Arts Academy. I made the official website for MPAA using WordPress, WooCommerce, and the Essential Theme. Opened doors for working together on a global scale and showed off skills in e-commerce and education platforms."
             />
             <Card
               year="2022"
-              text="Landed my first full-time job at Taknik Bharti, starting a phase of rapid learning and hands-on experience in a professional environment."
+              text="Full-Time Job at Taknik Bharti I joined Taknik Bharti as a web developer, where I learned a lot by working in a fast-paced professional setting."
             />
             <Card
               year="2022"
-              text="Took on a major responsibility with my first government project, Pradhanmantri Sangrahalaya. Designing and building for the public sector taught me the value of impact and reliability in web solutions."
+              text="Government Project – Pradhanmantri Sangrahalaya Helped make the official website for the Pradhanmantri Sangrahalaya, a national museum about India's Prime Ministers. Learned how important reliability and impact are in web solutions for the public sector."
             />
             <Card
               year="2023"
-              text="Ventured into modern frontend development by creating my first React website for Ramen Paul, further polishing my skills in JavaScript and user experience design."
+              text="Ramen Paul on Modern Frontend Development I made my first React website, which helped me get better at JavaScript, UI/UX, and modern frontend frameworks."
             />
             <Card
               year="2023"
-              text="Embarked on a new challenge with my second job at Paramarsh, a renowned IT solutions provider. Here, I continue to broaden my expertise, working on diverse projects and leveraging years of accumulated knowledge alongside talented teams."
+              text="Paramarsh – IT Solutions Provider At Paramarsh, I work with talented teams on a variety of projects and use the knowledge I've gained over the years."
+            />
+            <Card
+              year="2025"
+              text="I just finished my time at Paramarsh and am now actively looking for new freelance projects and job openings where I can use my creativity, dependability, and technical skills."
             />
           </section>
 
@@ -142,15 +159,15 @@ export default function About() {
               viewport={{ once: true, margin: "-50px 0px 0px 0px" }}
               transition={{ duration: 1, ease: "anticipate" }}
             >
-              <h2 className="more-projects__header-heading">
-                Besides my career
-              </h2>
+              <h3 className="more-projects__header-heading">
+                In addition to my job
+              </h3>
               <p className="more-projects__header-text">
-                Engaging in music, gaming, and reading enriches my perspective
-                and creativity. Being part of open-source and tech communities
-                as "curiousdilip" allows me to contribute, learn, and connect
-                with like-minded peers. I welcome discussions on code, ideas, or
-                collaboration via Telegram or email.
+                Playing music, video games, and reading all help me see things
+                in new ways and come up with new ideas. As "curiousdilip," I can
+                learn, contribute, and connect with other people who are
+                interested in open source and technology. You can talk to me
+                about code, ideas, or working together on Telegram or by email.
               </p>
             </motion.div>
 
@@ -162,16 +179,16 @@ export default function About() {
                 viewport={{ once: true, margin: "-50px 0px 0px 0px" }}
                 transition={{ duration: 1, ease: "anticipate" }}
               >
-                Notable Projects & Milestones:
+                Important Projects and Milestones:
               </motion.h3>
 
               <OtherProject
                 heading="MPAA - Performing Arts Academy"
-                text="I developed the official website for the MPAA - Performing Arts Academy using WordPress, WooCommerce, and the Essential Theme. The site promotes MPAA’s flagship 3-Year BA (Hons) Musical Theatre Performance Degree, highlighting strong industry connections and exceptional graduate employment rates."
+                text="I used WordPress, WooCommerce, and the Essential Theme to make the MPAA - Performing Arts Academy's official website. The site promotes MPAA's flagship 3-Year BA (Hons) Musical Theatre Performance Degree, which has strong ties to the industry and a high rate of graduates finding work."
               />
               <OtherProject
                 heading="Pradhanmantri Sangrahalaya | Museum on Indian Prime Ministers"
-                text="I contributed to the official website for the Pradhanmantri Sangrahalaya (Prime Ministers' Museum), a prestigious national museum dedicated to chronicling the lives and contributions of India’s Prime Ministers.
+                text="I helped make the official website for the Pradhanmantri Sangrahalaya, which is a well-known national museum that tells the stories of India's Prime Ministers and their contributions to the country.
 
 "
               />

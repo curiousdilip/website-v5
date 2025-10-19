@@ -59,6 +59,12 @@ export default function MyApp({ Component, pageProps }) {
             "name": "Dilip Kumar Maurya",
             "logo": "https://www.dilipmaurya.in/img/logo.svg",
             "description": "Dilip Kumar is a web developer based in India, who builds user-friendly and responsive websites to meet your needs.",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "New Delhi",
+              "addressCountry": "India"
+            },
+
             "contactPoint": {
               "@type": "ContactPoint",
               "telephone": "+91 98997 42615",
@@ -73,7 +79,8 @@ export default function MyApp({ Component, pageProps }) {
             "worksFor": {
               "@type": "Organization",
               "name": "Freelance"
-            }
+            }, "knowsAbout": ["React", "WordPress", "JavaScript", "Web Development", "UI/UX Design"]
+
           })
         }}
       />
