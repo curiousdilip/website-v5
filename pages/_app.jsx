@@ -35,7 +35,10 @@ export default function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="google-site-verification" content="soBSvXZTtbZB3TKHu92b_RAUy6KcQtKKuaf7GcFW1oE" />
+        <meta
+          name="google-site-verification"
+          content="soBSvXZTtbZB3TKHu92b_RAUy6KcQtKKuaf7GcFW1oE"
+        />
       </Head>
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-W78VYNSQ67"
@@ -55,33 +58,39 @@ export default function MyApp({ Component, pageProps }) {
           __html: JSON.stringify({
             "@context": "http://schema.org",
             "@type": "Person",
-            "url": "https://www.dilipmaurya.in/",
-            "name": "Dilip Kumar Maurya",
-            "logo": "https://www.dilipmaurya.in/img/logo.svg",
-            "description": "Dilip Kumar is a web developer based in India, who builds user-friendly and responsive websites to meet your needs.",
-            "address": {
+            url: "https://www.dilipmaurya.in/",
+            name: "Dilip Kumar Maurya",
+            logo: "https://www.dilipmaurya.in/favicon.svg",
+            description:
+              "Dilip Kumar is a web developer based in India, who builds user-friendly and responsive websites to meet your needs.",
+            address: {
               "@type": "PostalAddress",
-              "addressLocality": "New Delhi",
-              "addressCountry": "India"
+              addressLocality: "New Delhi",
+              addressCountry: "India",
             },
 
-            "contactPoint": {
+            contactPoint: {
               "@type": "ContactPoint",
-              "telephone": "+91 98997 42615",
-              "contactType": "customer service"
+              telephone: "+91 98997 42615",
+              contactType: "customer service",
             },
-            "sameAs": [
+            sameAs: [
               "https://twitter.com/curiousdilip",
               "https://www.github.com/curiousdilip",
               "https://www.linkedin.com/in/curiousdilip/",
-
             ],
-            "worksFor": {
+            worksFor: {
               "@type": "Organization",
-              "name": "Freelance"
-            }, "knowsAbout": ["React", "WordPress", "JavaScript", "Web Development", "UI/UX Design"]
-
-          })
+              name: "Freelance",
+            },
+            knowsAbout: [
+              "React",
+              "WordPress",
+              "JavaScript",
+              "Web Development",
+              "UI/UX Design",
+            ],
+          }),
         }}
       />
       <Header />

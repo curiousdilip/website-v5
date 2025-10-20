@@ -440,8 +440,8 @@ export default function Home() {
           </motion.h2>
 
           <div className="review-cards-grid">
-            <div class="review-card">
-              <div class="review-header">
+            <div className="review-card">
+              <div className="review-header">
                 <Image
                   src={michael}
                   alt="Michael Sam"
@@ -450,18 +450,18 @@ export default function Home() {
                   height={32}
                 />
 
-                <div class="author-name">Michael Sam</div>
-                <div class="rating">★★★★★</div>
+                <div className="author-name">Michael Sam</div>
+                <div className="rating">★★★★★</div>
               </div>
-              <div class="review-text">
+              <div className="review-text">
                 Dilip Kumar did an amazing job on my landing page. He finished
                 everything in just one week, and the page ...
               </div>
-              <div class="review-date">September 22, 2025</div>
+              <div className="review-date">September 22, 2025</div>
             </div>
 
-            <div class="review-card">
-              <div class="review-header">
+            <div className="review-card">
+              <div className="review-header">
                 <Image
                   src={ankit}
                   alt="ankit"
@@ -469,18 +469,18 @@ export default function Home() {
                   width={32}
                   height={32}
                 />
-                <div class="author-name">Ankit Kushwaha</div>
-                <div class="rating">★★★★★</div>
+                <div className="author-name">Ankit Kushwaha</div>
+                <div className="rating">★★★★★</div>
               </div>
-              <div class="review-text">
+              <div className="review-text">
                 Working with Dilip was an excellent experience. He was fast,
                 efficient, and delivered a website that exce ...
               </div>
-              <div class="review-date">August 23, 2025</div>
+              <div className="review-date">August 23, 2025</div>
             </div>
 
-            <div class="review-card">
-              <div class="review-header">
+            <div className="review-card">
+              <div className="review-header">
                 <Image
                   src={tarun}
                   alt="tarunpreet"
@@ -488,18 +488,18 @@ export default function Home() {
                   width={32}
                   height={32}
                 />
-                <div class="author-name">Tarunpreet Kaur</div>
-                <div class="rating">★★★★★</div>
+                <div className="author-name">Tarunpreet Kaur</div>
+                <div className="rating">★★★★★</div>
               </div>
-              <div class="review-text">
+              <div className="review-text">
                 Dilip is a talented developer with a knack of developing exactly
                 what the client wants. I worked with Dil ...
               </div>
-              <div class="review-date">July 30, 2025</div>
+              <div className="review-date">July 30, 2025</div>
             </div>
 
-            <div class="review-card">
-              <div class="review-header">
+            <div className="review-card">
+              <div className="review-header">
                 <Image
                   src={oxsys}
                   alt="oxsys"
@@ -507,14 +507,14 @@ export default function Home() {
                   width={32}
                   height={32}
                 />
-                <div class="author-name">Oxsys Systems</div>
-                <div class="rating">★★★★★</div>
+                <div className="author-name">Oxsys Systems</div>
+                <div className="rating">★★★★★</div>
               </div>
-              <div class="review-text">
+              <div className="review-text">
                 Excellent professionalism, well coordinated, delivered in time,
                 rightly charged, a dedicated coder, stron ...
               </div>
-              <div class="review-date">November 7, 2024</div>
+              <div className="review-date">November 7, 2024</div>
             </div>
           </div>
 

@@ -48,7 +48,7 @@ export default function Project({ project }) {
         <meta property="og:type" content="website" />
         <meta
           property="og:url"
-          content={`https://www.dilipmaurya.in/work/${project.slug}`}
+          content={`https://www.dilipmaurya.in/portfolio/${project.slug}`}
         />
         <meta property="og:title" content={`${project.title} | Dilip Kumar `} />
         <meta
@@ -66,7 +66,7 @@ export default function Project({ project }) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:url"
-          content={`https://www.dilipmaurya.in/work/${project.slug}`}
+          content={`https://www.dilipmaurya.in/portfolio/${project.slug}`}
         />
         <meta name="twitter:title" content={`${project.title} | Dilip Kumar`} />
         <meta
@@ -83,7 +83,7 @@ export default function Project({ project }) {
         />
         <link
           rel="canonical"
-          href={`https://www.dilipmaurya.in/work/${project.slug}`}
+          href={`https://www.dilipmaurya.in/portfolio/${project.slug}`}
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
