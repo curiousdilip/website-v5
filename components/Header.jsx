@@ -65,7 +65,7 @@ export default function Header() {
           </li>
           <li className="nav__list-item">
             <Link href="/portfolio" onClick={toggleNav} title="Work">
-              Work
+              Portfolio
             </Link>
           </li>
           <li className="nav__list-item">

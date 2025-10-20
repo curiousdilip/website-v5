@@ -256,13 +256,13 @@ export default function Home() {
                   Discipleship Centre (DC) is a registered nonprofit
                   organization working toward the sustainable devel...
                 </p>
-                <a
-                  href="work/discipleship-centre"
+                <Link
+                  href="portfolio/discipleship-centre"
                   className="btn btn--secondary"
                   style={{ alignSelf: "flex-start", lineHeight: 1.6 }}
                 >
                   View Project
-                </a>
+                </Link>
               </div>
             </motion.div>
 
@@ -332,13 +332,13 @@ export default function Home() {
                   An independent brand designer on a mission to craft brands
                   that pop! I'm all about teaming up to cre...
                 </p>
-                <a
-                  href="work/sidharth-design"
+                <Link
+                  href="portfolio/sidharth-design"
                   className="btn btn--secondary"
                   style={{ alignSelf: "flex-start", lineHeight: 1.6 }}
                 >
                   View Project
-                </a>
+                </Link>
               </div>
             </motion.div>
 
@@ -408,13 +408,13 @@ export default function Home() {
                   MPAA is an independent Higher and Further Education Academy
                   for the Performing Arts.
                 </p>
-                <a
-                  href="work/mpaa-academy"
+                <Link
+                  href="portfolio/mpaa-academy"
                   className="btn btn--secondary"
                   style={{ alignSelf: "flex-start", lineHeight: 1.6 }}
                 >
                   View Project
-                </a>
+                </Link>
               </div>
             </motion.div>
           </div>
@@ -423,9 +423,9 @@ export default function Home() {
             className="block"
             style={{ display: "block", margin: "0 auto", marginBottom: "60px" }}
           >
-            <a href="/work" className="btn btn--primary">
+            <Link href="/portfolio" className="btn btn--primary">
               View More Project
-            </a>
+            </Link>
           </div>
         </motion.div>
 
