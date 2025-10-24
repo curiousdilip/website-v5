@@ -25,10 +25,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>
-          Dilip Kumar | Web Developer in Delhi | Custom React & WordPress
-          Development
-        </title>
+        <title>Dilip Kumar | Web Developer in Delhi</title>
         <meta
           name="description"
           content="Expert web developer in Delhi specializing in responsive website design, custom web development, React, PHP & WordPress. SEO-optimized solutions for businesses."
@@ -38,7 +35,7 @@ export default function Home() {
         <meta property="og:url" content="https://www.dilipmaurya.in/" />
         <meta
           property="og:title"
-          content="Dilip Kumar | Web Developer in Delhi | Custom React & WordPress Development"
+          content="Dilip Kumar | Web Developer in Delhi"
         />
         <meta
           property="og:description"
@@ -52,7 +49,7 @@ export default function Home() {
         <meta name="twitter:url" content="https://www.dilipmaurya.in/" />
         <meta
           name="twitter:title"
-          content="Dilip Kumar | Web Developer in Delhi | Custom React & WordPress Development"
+          content="Dilip Kumar | Web Developer in Delhi"
         />
         <meta
           name="twitter:description"
@@ -121,7 +118,7 @@ export default function Home() {
           <div className="service-cards-grid">
             <motion.div className="service-card" variants={item}>
               <div className="icon">
-                <i className="bi bi-cursor"></i>
+                <i className="bi bi-globe"></i>
               </div>
               <div className="service-detail">
                 <h3>Web Development Services</h3>
@@ -133,7 +130,7 @@ export default function Home() {
 
             <motion.div className="service-card" variants={item}>
               <div className="icon">
-                <i className="bi bi-graph-up-arrow"></i>
+                <i className="bi bi-wordpress"></i>
               </div>
               <div className="service-detail">
                 <h3>WordPress Development</h3>
@@ -152,7 +149,7 @@ export default function Home() {
             </motion.div>
             <motion.div className="service-card" variants={item}>
               <div className="icon">
-                <i className="bi bi-code-slash"></i>
+                <i className="bi bi-graph-up"></i>
               </div>
               <div className="service-detail">
                 <h3>Analytics & SEO</h3>
@@ -163,7 +160,7 @@ export default function Home() {
             </motion.div>
             <motion.div className="service-card" variants={item}>
               <div className="icon">
-                <i className="bi bi-code-slash"></i>
+                <i className="bi bi-shield-lock"></i>
               </div>
               <div className="service-detail">
                 <h3>Web Security</h3>

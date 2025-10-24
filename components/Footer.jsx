@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-
 export default function Footer() {
   // Define variants inline
   const footerVariants = {
@@ -31,33 +30,47 @@ export default function Footer() {
           <div className="upper-footer">
             <motion.div className="description" variants={footerItemVariants}>
               {/* <Link href="/">Dilip.</Link> */}
-              <p>Dilip Kumar is an experienced web developer in India, specializing in responsive, user-friendly websites and custom solutions to grow your business. Contact today.</p>
+              <p>
+                Dilip Kumar is an experienced web developer in India,
+                specializing in responsive, user-friendly websites and custom
+                solutions to grow your business. Contact today.
+              </p>
               <motion.div className="socials" variants={footerItemVariants}>
                 <motion.ul>
                   {[
                     {
                       href: "https://github.com/curiousdilip",
                       label: "github",
-                      icon: "bi bi-github", rel: "me noopener noreferrer",
+                      icon: "bi bi-github",
+                      rel: "me noopener noreferrer",
                     },
                     {
                       href: "https://www.linkedin.com/in/curiousdilip/",
                       label: "linkedin",
-                      icon: "bi bi-linkedin", rel: "me noopener noreferrer",
+                      icon: "bi bi-linkedin",
+                      rel: "me noopener noreferrer",
                     },
                     {
                       href: "https://x.com/curiousdilip/",
                       label: "twitter",
-                      icon: "bi bi-twitter-x", rel: "me noopener noreferrer",
+                      icon: "bi bi-twitter-x",
+                      rel: "me noopener noreferrer",
                     },
                     {
                       href: "mailto:contact@dilipmaurya.in",
                       label: "mail me",
-                      icon: "bi bi-envelope", rel: " noopener noreferrer",
+                      icon: "bi bi-envelope",
+                      rel: " noopener noreferrer",
                     },
                   ].map((item) => (
                     <motion.li key={item.href} variants={footerItemVariants}>
-                      <a href={item.href} target="_blank" rel={item.rel} aria-label={item.label} title={item.label}>
+                      <a
+                        href={item.href}
+                        target="_blank"
+                        rel={item.rel}
+                        aria-label={item.label}
+                        title={item.label}
+                      >
                         <i className={item.icon}></i>
                       </a>
                     </motion.li>
@@ -71,10 +84,10 @@ export default function Footer() {
                 {
                   title: "Site Link",
                   links: [
-                    { text: "Projects", href: "/work" },
+                    { text: "Portfolio", href: "/portfolio" },
                     { text: "About", href: "/about" },
                     { text: "Contact", href: "/contact" },
-                    { text: "Resume", href: "/resume.pdf", external: true, },
+                    { text: "Resume", href: "/resume.pdf", external: true },
                   ],
                 },
                 {
@@ -85,14 +98,12 @@ export default function Footer() {
                       href: "https://github.com/curiousdilip/website-v5",
                       external: true,
                       rel: "me noopener noreferrer",
-
                     },
                     {
-                      text: "Sitemap", href: "/sitemap.xml",
+                      text: "Sitemap",
+                      href: "/sitemap.xml",
                       external: true,
-
                     },
-
                   ],
                 },
                 {
@@ -102,7 +113,7 @@ export default function Footer() {
                       text: "Frontend Mentor",
                       href: "https://www.frontendmentor.io/profile/curiousdilip",
                       external: true,
-                      rel: "me noopener noreferrer"
+                      rel: "me noopener noreferrer",
                     },
                     {
                       text: "Codepen",
@@ -113,12 +124,24 @@ export default function Footer() {
                   ],
                 },
               ].map((col) => (
-                <motion.div className="link" key={col.title} variants={footerItemVariants}>
+                <motion.div
+                  className="link"
+                  key={col.title}
+                  variants={footerItemVariants}
+                >
                   <h4>{col.title}</h4>
                   <ul>
                     {col.links.map((lnk) => (
                       <li key={lnk.href}>
-                        <Link href={lnk.href} target={lnk.external ? "_blank" : undefined} rel={lnk.rel || (lnk.external ? "noopener noreferrer" : undefined)} title={lnk.text}>
+                        <Link
+                          href={lnk.href}
+                          target={lnk.external ? "_blank" : undefined}
+                          rel={
+                            lnk.rel ||
+                            (lnk.external ? "noopener noreferrer" : undefined)
+                          }
+                          title={lnk.text}
+                        >
                           {lnk.text}
                         </Link>
                       </li>
@@ -130,8 +153,13 @@ export default function Footer() {
           </div>
 
           <motion.div className="copyright" variants={footerItemVariants}>
-            <p>&copy; {new Date().getFullYear()} Dilip Kumar. All rights reserved. </p>
-            <p>Last updated by Dilip on 11 October, 2025 at 2:32 AM UTC +5:30</p>
+            <p>
+              &copy; {new Date().getFullYear()} Dilip Kumar. All rights
+              reserved.{" "}
+            </p>
+            <p>
+              Last updated by Dilip on 11 October, 2025 at 2:32 AM UTC +5:30
+            </p>
           </motion.div>
         </div>
       </motion.footer>
