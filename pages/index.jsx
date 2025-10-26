@@ -67,7 +67,7 @@ export default function Home() {
         <meta httpEquiv="Content-Language" content="en" />
         <meta
           name="keywords"
-          content="web development, Custom Web Development , responsive website, website"
+          content="Dilip Kumar, Web Developer in Delhi, custom web development, responsive website, SEO-optimized solutions, businesses"
         />
       </Head>
 
@@ -527,15 +527,15 @@ export default function Home() {
           animate="visible"
         >
           <div className="ctbox ">
-            <p>Ready to grow your business online? </p>
-            <p>for a free consultation.</p>
+            <p>Ready to start your custom web development project?  </p>
+            <p>For a free consultation.</p>
             <div
               className="block"
               style={{ display: "block", margin: "0 auto", marginTop: "20px" }}
             >
               <Link href="/contact" className="btn btn--primary">
                 {" "}
-                Contact me
+                Contact Dilip
               </Link>
             </div>
           </div>
