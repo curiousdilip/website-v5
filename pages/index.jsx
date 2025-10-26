@@ -67,7 +67,7 @@ export default function Home() {
         <meta httpEquiv="Content-Language" content="en" />
         <meta
           name="keywords"
-          content="freelance web developer, Custom websites, responsive website design,PHP Development"
+          content="web development, Custom Web Development , responsive website, website"
         />
       </Head>
 
@@ -215,13 +215,9 @@ export default function Home() {
                     src="https://cdn.cosmicjs.com/0960a860-6eb9-11f0-9635-17c84764a8f2-www-discipleshipcentre-org-in_.png"
                     alt="Discipleship Centre"
                     width={387}
-                    height={258}
+                    height={192}
                     priority
-                    style={{
-                      width: "100%",
-                      height: "auto",
-                      objectFit: "cover",
-                    }}
+                    sizes="(max-width: 600px) 100vw, 387px"
                   />
                 </div>
               </div>
@@ -256,6 +252,7 @@ export default function Home() {
                 <Link
                   href="portfolio/discipleship-centre"
                   className="btn btn--secondary"
+                  target="_blank" rel="noopener noreferrer nofollow"
                   style={{ alignSelf: "flex-start", lineHeight: 1.6 }}
                 >
                   View Project
@@ -291,13 +288,9 @@ export default function Home() {
                     src="https://cdn.cosmicjs.com/8df5f630-6eb8-11f0-9c1f-63444cd7c64f-sidharth-design_.png"
                     alt="Sidharth Design"
                     width={387}
-                    height={258}
+                    height={192}
                     priority
-                    style={{
-                      width: "100%",
-                      height: "auto",
-                      objectFit: "cover",
-                    }}
+                    sizes="(max-width: 600px) 100vw, 387px"
                   />
                 </div>
               </div>
@@ -332,6 +325,7 @@ export default function Home() {
                 <Link
                   href="portfolio/sidharth-design"
                   className="btn btn--secondary"
+                  target="_blank" rel="noopener noreferrer nofollow"
                   style={{ alignSelf: "flex-start", lineHeight: 1.6 }}
                 >
                   View Project
@@ -367,13 +361,9 @@ export default function Home() {
                     src="https://cdn.cosmicjs.com/a591f080-6df7-11f0-8a01-b925a63a09d6-mpaa-ac-uk_.png"
                     alt="MPAA Academy"
                     width={387}
-                    height={258}
+                    height={192}
                     priority
-                    style={{
-                      width: "100%",
-                      height: "auto",
-                      objectFit: "cover",
-                    }}
+                    sizes="(max-width: 600px) 100vw, 387px"
                   />
                 </div>
               </div>
@@ -408,6 +398,7 @@ export default function Home() {
                 <Link
                   href="portfolio/mpaa-academy"
                   className="btn btn--secondary"
+                  target="_blank" rel="noopener noreferrer nofollow"
                   style={{ alignSelf: "flex-start", lineHeight: 1.6 }}
                 >
                   View Project
@@ -521,7 +512,7 @@ export default function Home() {
           >
             <Link
               href="https://www.google.com/search?q=Dilip+Kumar+%7C+Web+Developer%E2%80%A6#lrd=0x390d1b0024a3520b:0x7cca2b1632be5ac7,1,"
-              target="_blank"
+              target="_blank" rel="noopener noreferrer nofollow"
               className="btn btn--primary"
             >
               Read More Reviews
