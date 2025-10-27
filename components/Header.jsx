@@ -148,9 +148,8 @@ export default function Header() {
 
           <div
             id="availability-status-message"
-            className={`nav__availability-status--message ${
-              isStatusOpen ? "is-open" : "is-closed"
-            }`}
+            className={`nav__availability-status--message ${isStatusOpen ? "is-open" : "is-closed"
+              }`}
             role="region"
             aria-hidden={!isStatusOpen}
           >

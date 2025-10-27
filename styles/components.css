@@ -1,0 +1,239 @@
+/* Navigation */
+
+.nav {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    padding-block: 1.5rem;
+    background-color: var(--clr-neutral-900-40);
+    backdrop-filter: blur(32px);
+}
+
+.nav__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__toggle {
+    display: none;
+}
+
+.nav__list {
+    display: flex;
+    gap: 32px;
+}
+
+.nav__list-item a {
+    display: inline-block;
+    transition: transform 150ms ease-in-out;
+}
+
+.nav__list-item a:hover,
+.nav__list-item a:focus-visible {
+    transform: translateY(-5px);
+}
+
+.nav__availability-status {
+    position: relative;
+}
+
+.nav__availability-status--toggle {
+    cursor: pointer;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    padding: 4px 16px;
+    border-radius: var(--border-radius-900);
+    border: 1px solid var(--clr-neutral-100);
+}
+
+.nav__availability-status--message {
+    pointer-events: none;
+    position: absolute;
+    width: 280px;
+    top: calc(100% + 24px);
+    right: 0;
+    background-color: var(--clr-neutral-900);
+    padding: 1.5rem;
+
+    border-radius: 0 0 var(--border-radius-400) var(--border-radius-400);
+
+    transition: opacity 150ms ease-in-out;
+    opacity: 0;
+}
+
+.nav__availability-status--toggle {
+    color: var(--clr-neutral-100);
+}
+
+.nav__availability-status--message[aria-expanded="true"] {
+    pointer-events: all;
+    opacity: 1;
+}
+
+.nav__availability-status__title {
+    margin-bottom: 16px;
+    color: var(--clr-neutral-600);
+}
+
+.nav__availability-status--message.is-open {
+    max-height: 200px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.nav__availability-status--message.is-closed {
+    max-height: 0;
+    opacity: 0;
+    transform: translateY(-5px);
+}
+
+@media (min-width: 768px) {
+    .nav__availability-status--message {
+        width: auto;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 992px) {
+    .nav {
+        position: sticky;
+        top: 0;
+        margin-bottom: 40px;
+    }
+
+    .nav__toggle {
+        display: block;
+    }
+
+    .nav__list {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 120px 24px 60px;
+        background-color: var(--clr-neutral-900);
+        z-index: -1;
+        flex-direction: column;
+
+        transition: transform 250ms ease-in-out;
+        transform: translateY(-100%);
+    }
+
+    .nav__list[aria-expanded="true"] {
+        transform: translateY(0);
+    }
+}
+
+@media (min-width: 768px) {
+    .nav__availability-status--toggle {
+        padding: 8px 32px;
+        gap: 12px;
+    }
+}
+
+
+/* Footer */
+
+footer {
+    padding-block: 60px;
+    border-top: 1px solid hsl(240 5.9% 90%);
+}
+
+footer .upper-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .upper-footer .description {
+    width: 30%;
+}
+
+footer .upper-footer .description p {
+    font-size: 16px;
+}
+
+footer .upper-footer .description a {
+    margin-bottom: 10px;
+
+    font-size: 30px;
+}
+
+footer .upper-footer .description .socials ul {
+    display: flex;
+    list-style: none;
+    gap: 18px;
+    margin-top: 60px;
+}
+
+footer .upper-footer .description .socials ul li a {
+    color: #fff;
+    font-size: 18px;
+}
+
+footer .upper-footer .links {
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    gap: 40px;
+}
+
+footer .upper-footer .links .link h4 {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+footer .upper-footer .links .link ul {
+    list-style: none;
+}
+
+footer .upper-footer .links .link ul li {
+    margin-bottom: 5px;
+}
+
+footer .upper-footer .links .link ul li a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+}
+
+footer .copyright {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+footer .copyright p {
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding-block: 40px;
+    }
+
+    footer .upper-footer {
+        flex-direction: column;
+    }
+
+    footer .upper-footer .description {
+        width: 100%;
+    }
+
+    footer .upper-footer .description .socials ul {
+        display: flex;
+        list-style: none;
+        gap: 10px;
+        margin-block: 20px;
+    }
+
+    footer .copyright {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 10px;
+    }
+
+    footer .copyright p {
+        text-align: center;
+    }
+}
