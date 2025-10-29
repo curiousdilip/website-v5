@@ -92,13 +92,13 @@
 
 .review-text {
     font-size: 13px;
-    color: #333;
+    color: #000;
     margin-bottom: 0.5rem;
 }
 
 .review-date {
     font-size: 0.8rem;
-    color: #777;
+    color: #000;
     text-align: right;
 }
 

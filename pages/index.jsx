@@ -214,10 +214,14 @@ export default function Home() {
                   <Image
                     src="https://cdn.cosmicjs.com/0960a860-6eb9-11f0-9635-17c84764a8f2-www-discipleshipcentre-org-in_.png"
                     alt="Discipleship Centre"
-                    width={387}
-                    height={192}
-                    priority
-                    sizes="(max-width: 600px) 100vw, 387px"
+                    // width={387}
+                    // height={192}
+                    // priority
+                    // sizes="(max-width: 600px) 100vw, 387px"
+                      fill
+    priority
+    sizes="(max-width: 600px) 100vw, 1920px"
+    style={{ objectFit: 'cover' }}
                   />
                 </div>
               </div>
@@ -287,10 +291,14 @@ export default function Home() {
                   <Image
                     src="https://cdn.cosmicjs.com/8df5f630-6eb8-11f0-9c1f-63444cd7c64f-sidharth-design_.png"
                     alt="Sidharth Design"
-                    width={387}
-                    height={192}
-                    priority
-                    sizes="(max-width: 600px) 100vw, 387px"
+                  width={387}
+  height={218}
+                    // priority
+                    // sizes="(max-width: 600px) 100vw, 387px"
+                  
+    priority
+    sizes="(max-width: 600px) 100vw, 1920px"
+    style={{ objectFit: 'cover' }}
                   />
                 </div>
               </div>
@@ -360,10 +368,14 @@ export default function Home() {
                   <Image
                     src="https://cdn.cosmicjs.com/a591f080-6df7-11f0-8a01-b925a63a09d6-mpaa-ac-uk_.png"
                     alt="MPAA Academy"
-                    width={387}
-                    height={192}
-                    priority
-                    sizes="(max-width: 600px) 100vw, 387px"
+                    // width={387}
+                    // height={192}
+                    // priority
+                    // sizes="(max-width: 600px) 100vw, 387px"
+                             fill
+    priority
+    sizes="(max-width: 600px) 100vw, 1920px"
+    style={{ objectFit: 'cover' }}
                   />
                 </div>
               </div>
@@ -438,7 +450,7 @@ export default function Home() {
                   height={32}
                 />
 
-                <div className="author-name">Michael Sam</div>
+                <h3 className="author-name">Michael Sam</h3>
                 <div className="rating">★★★★★</div>
               </div>
               <div className="review-text">
@@ -457,7 +469,7 @@ export default function Home() {
                   width={32}
                   height={32}
                 />
-                <div className="author-name">Ankit Kushwaha</div>
+                <h3 className="author-name">Ankit Kushwaha</h3>
                 <div className="rating">★★★★★</div>
               </div>
               <div className="review-text">
@@ -476,7 +488,7 @@ export default function Home() {
                   width={32}
                   height={32}
                 />
-                <div className="author-name">Tarunpreet Kaur</div>
+                <h3 className="author-name">Tarunpreet Kaur</h3>
                 <div className="rating">★★★★★</div>
               </div>
               <div className="review-text">
@@ -495,7 +507,7 @@ export default function Home() {
                   width={32}
                   height={32}
                 />
-                <div className="author-name">Oxsys Systems</div>
+                <h3 className="author-name">Oxsys Systems</h3>
                 <div className="rating">★★★★★</div>
               </div>
               <div className="review-text">
