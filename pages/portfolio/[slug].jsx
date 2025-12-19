@@ -161,11 +161,12 @@ export default function Project({ project }) {
                       href={project.metadata.link}
                       target="_blank"
                       style={{ textDecoration: "underline" }}
-                      rel="noopener noreferrer"
+                      rel="noopener noreferrer nofollow"
                       title="Visit the website"
                     >
                       See Live
                     </Link>
+
                   ) : (
                     <span>Not Available</span>
                   )}
