@@ -100,7 +100,7 @@ export default function Project({ project }) {
                 <Link
                   href={project.metadata.link}
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener noreferrer nofollow"
                   className="p__header-title-link"
                   title={project.title}
                 >

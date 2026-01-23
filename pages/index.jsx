@@ -121,10 +121,9 @@ export default function Home() {
                 <i className="bi bi-globe"></i>
               </div>
               <div className="service-detail">
-                <h3>Web Development Services</h3>
-                <p>
-                  Custom websites, web applications, and e-commerce solutions.
-                </p>
+                              <h3>Web Security</h3>
+
+                  <p> Secure coding, vulnerability assessments.</p>
               </div>
             </motion.div>
 
@@ -163,8 +162,11 @@ export default function Home() {
                 <i className="bi bi-shield-lock"></i>
               </div>
               <div className="service-detail">
-                <h3>Web Security</h3>
-                <p> Secure coding, vulnerability assessments.</p>
+                <h3>Web Development</h3>
+ <p>
+                  Custom websites, web applications, and e-commerce solutions.
+                </p>
+             
               </div>
             </motion.div>
           </div>

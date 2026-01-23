@@ -29,7 +29,7 @@ export default function Footer() {
         <div className="container">
           <div className="upper-footer">
             <motion.div className="description" variants={footerItemVariants}>
-              {/* <Link href="/">Dilip.</Link> */}
+             
               <p>
                 Dilip Kumar is an experienced web developer in India,
                 specializing in responsive, user-friendly websites and custom
@@ -158,7 +158,7 @@ export default function Footer() {
               reserved.{" "}
             </p>
             <p>
-              Last updated by Dilip on 11 October, 2025 at 2:32 AM UTC +5:30
+              Last updated by Dilip on 24 January, 2026 at 2:32 AM UTC +5:30
             </p>
           </motion.div>
         </div>
